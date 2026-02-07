@@ -43,7 +43,7 @@ export default function ContentRenderer({ blocks }: ContentRendererProps) {
             return (
               <figure key={i} className="my-6">
                 <img
-                  src={block.src}
+                  src={`${import.meta.env.BASE_URL}${block.src.replace(/^\//, '')}`}
                   alt={block.caption || ''}
                   className="rounded-lg border border-gray-200 max-w-full h-auto"
                   loading="lazy"
