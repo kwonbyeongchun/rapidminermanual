@@ -4,3 +4,4 @@ dist/
 *.pdf
 .claude/
 test-screenshots/
+playwright-test/
