@@ -1,0 +1,557 @@
+{
+  "id": "chapter-3",
+  "number": "3",
+  "title": "Design of Analysis Processes",
+  "slug": "chapter-3-design-of-analysis-processes",
+  "blocks": [],
+  "sections": [
+    {
+      "id": "3-1-creating-a-new-process",
+      "number": "3.1",
+      "title": "Creating a New Process",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Whether you now select the action “New” from the Home Perspective, the “New” icon on the left side of the main toolbar of RapidMiner Studio or the associated entry in the “File” menu: A new analysis process is created in each case, which you can work on in the following.",
+          "html": "Whether you now select the action “New” from the Home Perspective, the “New” icon on the left side of the main toolbar of RapidMiner Studio or the associated entry in the “File” menu: A new analysis process is created in each case, which you can work on in the following. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Tip: We recommend to save the process in your repository, when it is created. 53",
+          "html": "Tip: We recommend to save the process in your repository, when it is created. 53"
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "3-2-repository-actions",
+      "number": "3.2",
+      "title": "Repository Actions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In principle, you are completely free in how you structure your repository. In the context menu of the entries in the repository browser and also in the repository view you will find all necessary entries for the administration of your data and processes, as you can see them in Fig. 3.1.",
+          "html": "In principle, you are completely free in how you structure your repository. In the context menu of the entries in the repository browser and also in the repository view you will find all necessary entries for the administration of your data and processes, as you can see them in Fig. 3.1. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 3.1: The context menu of the repository entries, both in the repository browser and in the repository view, offers all necessary options for administration.",
+          "html": "Figure 3.1: The context menu of the repository entries, both in the repository browser and in the repository view, offers all necessary options for administration. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Store Process Here: Stores the current process in the given location 54",
+          "html": "Store Process Here: Stores the current process in the given location 54"
+        },
+        {
+          "type": "paragraph",
+          "text": "Rename: Renames the entry or the directory",
+          "html": "Rename: Renames the entry or the directory "
+        },
+        {
+          "type": "paragraph",
+          "text": "Create Folder: Creates a new directory in this place",
+          "html": "Create Folder: Creates a new directory in this place "
+        },
+        {
+          "type": "paragraph",
+          "text": "Copy: Copies the selected entry for later insertion in other places Paste: Pastes a previously copied entry to this place",
+          "html": "Copy: Copies the selected entry for later insertion in other places Paste: Pastes a previously copied entry to this place "
+        },
+        {
+          "type": "paragraph",
+          "text": "Copy Location to Clipboard: Copies a clear identifier for this entry to the clip board, meaning you can use this as a parameter for operators, in web interfaces or the like",
+          "html": "Copy Location to Clipboard: Copies a clear identifier for this entry to the clip board, meaning you can use this as a parameter for operators, in web interfaces or the like "
+        },
+        {
+          "type": "paragraph",
+          "text": "Delete: Deletes the selected repository entry or directory",
+          "html": "Delete: Deletes the selected repository entry or directory "
+        },
+        {
+          "type": "paragraph",
+          "text": "Refresh: Updates the display",
+          "html": "Refresh: Updates the display "
+        },
+        {
+          "type": "paragraph",
+          "text": "Open in file browser: Shows the repository in a file browser. This is not recom mended.",
+          "html": "Open in file browser: Shows the repository in a file browser. This is not recom mended. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 3.2: A repository structured into projects and each of those structured according to data, processes and results.",
+          "html": "Figure 3.2: A repository structured into projects and each of those structured according to data, processes and results. "
+        },
+        {
+          "type": "paragraph",
+          "text": "It is recommended that you create new directories in the repository for individual analysis projects and name these accordingly. It will never hurt to structure fur ther within the projects, e.g. structuring into further subdirectories for project specific data, different phases of data transformation and analysis or for results. A repository could thus have the structure like it is shown in Figure 3.2.",
+          "html": "It is recommended that you create new directories in the repository for individual analysis projects and name these accordingly. It will never hurt to structure fur ther within the projects, e.g. structuring into further subdirectories for project specific data, different phases of data transformation and analysis or for results. A repository could thus have the structure like it is shown in Figure 3.2. "
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "3-3-the-first-analysis-process",
+      "number": "3.3",
+      "title": "The First Analysis Process",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "After the creation of the process, RapidMiner Studio automatically switches to the Design Perspective and you can start with the process design. In later chap ters we will talk in detail about how to load data in RapidMiner Studio and store it in your repository. In this section however, the basic execution of processes is more important to us and we will therefore wait a short while before analysing real data.",
+          "html": "After the creation of the process, RapidMiner Studio automatically switches to the Design Perspective and you can start with the process design. In later chap ters we will talk in detail about how to load data in RapidMiner Studio and store it in your repository. In this section however, the basic execution of processes is more important to us and we will therefore wait a short while before analysing real data. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 3.3: The preset Design Perspective immediately after the creation of a new process.",
+          "html": "Figure 3.3: The preset Design Perspective immediately after the creation of a new process. "
+        },
+        {
+          "type": "paragraph",
+          "text": "As long as you have not changed the selection and positions of the individual views for the Design Perspective, your screen should more or less look like the one in Figure 3.3.",
+          "html": "As long as you have not changed the selection and positions of the individual views for the Design Perspective, your screen should more or less look like the one in Figure 3.3. "
+        },
+        {
+          "type": "paragraph",
+          "text": "We will now begin our new process starting with the generating of data which we can work on. As already said: We will see in later chapters how we can use data from the repository or even import it directly from other data sources such as databases or files by using operators. But for the moment we will put this aside and generate a small synthetic data set.",
+          "html": "We will now begin our new process starting with the generating of data which we can work on. As already said: We will see in later chapters how we can use data from the repository or even import it directly from other data sources such as databases or files by using operators. But for the moment we will put this aside and generate a small synthetic data set. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Please expand the group “Utility” in the Operators View and then the group “Data Generation”. The numbers in brackets next to the individual groups indi cate the number of operators for this group. You should now see several operators that can be used for generating an artificial data set. This includes the operator “Generate Sales Data”. Now drag this operator onto the white area while hold ing down the mouse button and release it there. The operator will be inserted and also directly connected depending on the automatic connection setting in the Operators View. If this does not happen, you can manually connect the output port of the new operator with the first result port of the entire process on the right-hand side of the white work area. Alternatively, it would of course have also been possible to insert the operator by using the New Operator dialog, as described in the previous chapter. Either way, the result ought to look roughly like Figure 3.4.",
+          "html": "Please expand the group “Utility” in the Operators View and then the group “Data Generation”. The numbers in brackets next to the individual groups indi cate the number of operators for this group. You should now see several operators that can be used for generating an artificial data set. This includes the operator “Generate Sales Data”. Now drag this operator onto the white area while hold ing down the mouse button and release it there. The operator will be inserted and also directly connected depending on the automatic connection setting in the Operators View. If this does not happen, you can manually connect the output port of the new operator with the first result port of the entire process on the right-hand side of the white work area. Alternatively, it would of course have also been possible to insert the operator by using the New Operator dialog, as described in the previous chapter. Either way, the result ought to look roughly like Figure 3.4. "
+        },
+        {
+          "type": "paragraph",
+          "text": "As you have surely noticed, the full name of this operator, “Generate Sales Data”, is too long and is cut off after the first few letters. Move the mouse onto this operator and stay there for a few moments. The name will now be shown in full in a small animation. Of course, you could also rename the operator and give it a shorter name.",
+          "html": "As you have surely noticed, the full name of this operator, “Generate Sales Data”, is too long and is cut off after the first few letters. Move the mouse onto this operator and stay there for a few moments. The name will now be shown in full in a small animation. Of course, you could also rename the operator and give it a shorter name. "
+        },
+        {
+          "type": "paragraph",
+          "text": "As you can see, the status indicator of the operator at the bottom left-hand side is yellow. This means that the operator has not produced any errors, but it has also not yet been successfully executed. So you have only fully configured the operator thus far, but this does in no way mean it has been directly executed. You can easily see that from the fact that the status indicator then turns green. Had you not noticed that you have already configured the operator? Indeed, the",
+          "html": "As you can see, the status indicator of the operator at the bottom left-hand side is yellow. This means that the operator has not produced any errors, but it has also not yet been successfully executed. So you have only fully configured the operator thus far, but this does in no way mean it has been directly executed. You can easily see that from the fact that the status indicator then turns green. Had you not noticed that you have already configured the operator? Indeed, the "
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 3.4: An initial and admittedly very simple process, which generates some data and displays the result in the Result Perspective.",
+          "html": "Figure 3.4: An initial and admittedly very simple process, which generates some data and displays the result in the Result Perspective. "
+        },
+        {
+          "type": "paragraph",
+          "text": "configuration was very simple in this specific case: It was not at all necessary to set any operator parameter. A red status indicator and entries in the Problems View would have indicated such a configuration need.",
+          "html": "configuration was very simple in this specific case: It was not at all necessary to set any operator parameter. A red status indicator and entries in the Problems View would have indicated such a configuration need. "
+        }
+      ],
+      "subsections": [
+        {
+          "id": "3-3-1-transforming-meta-data",
+          "number": "3.3.1",
+          "title": "Transforming Meta Data",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "We will now deal with one of the most fascinating aspects of RapidMiner Studio, namely the ability to compute the output of an operator or process beforehand and to even do this during the design time, so without having to load the actual data or even perform the process. This is made possible by the so-called meta data transformation of RapidMiner Studio.",
+              "html": "We will now deal with one of the most fascinating aspects of RapidMiner Studio, namely the ability to compute the output of an operator or process beforehand and to even do this during the design time, so without having to load the actual data or even perform the process. This is made possible by the so-called meta data transformation of RapidMiner Studio. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Of course, each operator defines the way in which the received input data is transformed. This is its task at the end of the day. The special thing about RapidMiner Studio however is that this can not only be done for actual data but also for the meta data about this data. This is typically much less voluminous",
+              "html": "Of course, each operator defines the way in which the received input data is transformed. This is its task at the end of the day. The special thing about RapidMiner Studio however is that this can not only be done for actual data but also for the meta data about this data. This is typically much less voluminous "
+            },
+            {
+              "type": "paragraph",
+              "text": "than the data itself and gives an excellent idea of which characteristics a particular data set has. The meta data in RapidMiner Studio essentially equates to the concept descriptions we discussed previously. It contains the attribute names of the example set as well as the value types and the roles of the attributes and even some fundamental statistics.",
+              "html": "than the data itself and gives an excellent idea of which characteristics a particular data set has. The meta data in RapidMiner Studio essentially equates to the concept descriptions we discussed previously. It contains the attribute names of the example set as well as the value types and the roles of the attributes and even some fundamental statistics. "
+            },
+            {
+              "type": "paragraph",
+              "text": "So much for the theory, but what does the meta data look like in practice i.e. in RapidMiner Studio? In RapidMiner Studio the meta data are provided at the ports. Just go over the output port of the recently inserted operator with the cursor and see in Figure 3.5 what happens.",
+              "html": "So much for the theory, but what does the meta data look like in practice i.e. in RapidMiner Studio? In RapidMiner Studio the meta data are provided at the ports. Just go over the output port of the recently inserted operator with the cursor and see in Figure 3.5 what happens. "
+            },
+            {
+              "type": "paragraph",
+              "text": "A tooltip will appear which describes the expected output of the port. First the name of the operator and of the port followed by the kind of meta data. In this case we are dealing with the meta data of an example set. The number of the examples can also be inferred (100) as well as the number of the attributes (8). Then there comes a description of the path the object would have taken through the process during an execution. In this case the path has only one station, i.e. the port of the generating operator. However, the most important part of the meta data (at least for an example set) is the table which describes the meta data of the individual attributes. The individual columns are:",
+              "html": "A tooltip will appear which describes the expected output of the port. First the name of the operator and of the port followed by the kind of meta data. In this case we are dealing with the meta data of an example set. The number of the examples can also be inferred (100) as well as the number of the attributes (8). Then there comes a description of the path the object would have taken through the process during an execution. In this case the path has only one station, i.e. the port of the generating operator. However, the most important part of the meta data (at least for an example set) is the table which describes the meta data of the individual attributes. The individual columns are: "
+            },
+            {
+              "type": "paragraph",
+              "text": "Role: The role of the attribute. If nothing is indicated then it is a regular at tribute",
+              "html": "Role: The role of the attribute. If nothing is indicated then it is a regular at tribute "
+            },
+            {
+              "type": "paragraph",
+              "text": "Name: The name of the attribute",
+              "html": "Name: The name of the attribute "
+            },
+            {
+              "type": "paragraph",
+              "text": "Type: The value type of the attribute",
+              "html": "Type: The value type of the attribute "
+            },
+            {
+              "type": "paragraph",
+              "text": "Range: The value range of the attribute, so the minimum and maximum in the case of numerical attributes and an excerpt of possible values in the case of nominal attributes",
+              "html": "Range: The value range of the attribute, so the minimum and maximum in the case of numerical attributes and an excerpt of possible values in the case of nominal attributes "
+            },
+            {
+              "type": "paragraph",
+              "text": "Missings: The number of examples where the value of this attribute is unknown Comment: A comment depending on the attribute",
+              "html": "Missings: The number of examples where the value of this attribute is unknown Comment: A comment depending on the attribute "
+            },
+            {
+              "type": "paragraph",
+              "text": "Tip: There are such tooltips of a higher complexity in several places in Rapid Miner Studio, also for the operator descriptions for example, which are shown as",
+              "html": "Tip: There are such tooltips of a higher complexity in several places in Rapid Miner Studio, also for the operator descriptions for example, which are shown as "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.5: The meta data of the output port of the operator “Generate Sales Data”.",
+              "html": "Figure 3.5: The meta data of the output port of the operator “Generate Sales Data”. "
+            },
+            {
+              "type": "paragraph",
+              "text": "a tooltip in the Operators View. You can take time to read the tooltip and also adjust it in terms of size if you press the key F3 beforehand.",
+              "html": "a tooltip in the Operators View. You can take time to read the tooltip and also adjust it in terms of size if you press the key F3 beforehand. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Please note that the meta data can often only represent an estimation and that an exact indication is not always possible. This is explained by the fact that parts of the meta data are unknown or can only be indicated inaccurately, e.g. with",
+              "html": "Please note that the meta data can often only represent an estimation and that an exact indication is not always possible. This is explained by the fact that parts of the meta data are unknown or can only be indicated inaccurately, e.g. with "
+            },
+            {
+              "type": "paragraph",
+              "text": "the indication “<100 Examples” for the number of the examples. Nevertheless, the meta data is a valuable source of help both for forthcoming design decisions and for the automatic recognition of problems as well as the suggestions for their solution i.e. quick fixes.",
+              "html": "the indication “<100 Examples” for the number of the examples. Nevertheless, the meta data is a valuable source of help both for forthcoming design decisions and for the automatic recognition of problems as well as the suggestions for their solution i.e. quick fixes. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Back to our example. Trained analysts will recognise straight away that the data must be so-called transaction data, where each transaction represents a purchase. We gave the following attributes for our example set:",
+              "html": "Back to our example. Trained analysts will recognise straight away that the data must be so-called transaction data, where each transaction represents a purchase. We gave the following attributes for our example set: "
+            },
+            {
+              "type": "paragraph",
+              "text": "• transaction id: Indicates a clear ID for the respective transactions, • store id: Indicates the store where the transaction was made, • customer id: Indicates the customer with whom the transaction was made, • product id: Indicates the ID of the product bought,",
+              "html": "• transaction id: Indicates a clear ID for the respective transactions, • store id: Indicates the store where the transaction was made, • customer id: Indicates the customer with whom the transaction was made, • product id: Indicates the ID of the product bought, "
+            },
+            {
+              "type": "paragraph",
+              "text": "• product category: Indicates the category of the product bought, • date: Indicates the transaction date,",
+              "html": "• product category: Indicates the category of the product bought, • date: Indicates the transaction date, "
+            },
+            {
+              "type": "paragraph",
+              "text": "• amount: Indicates the number of objects bought,",
+              "html": "• amount: Indicates the number of objects bought, "
+            },
+            {
+              "type": "paragraph",
+              "text": "• single price: Indicates the price of an individual object.",
+              "html": "• single price: Indicates the price of an individual object. "
+            },
+            {
+              "type": "paragraph",
+              "text": "If we look at the last two attributes first, then we see that, whilst the number and the individual price of the objects are given within the transaction, the associated total turnover however is not. Next we therefore want to generate a new attribute with the name “total price”, the values of which correspond to the product from amount and single price. For this we will use a further operator named “Generate Attributes”, which is located in the group “Data Transformation” – “Attribute Set Reduction and Transformation” – “Generation”. Drag the operator behind the first operator and connect the output port of the data generator with the input port of the new operator and connect the output port of the latter with the result output of the total process. The screen ought to then look roughly like in Fig. 3.6.",
+              "html": "If we look at the last two attributes first, then we see that, whilst the number and the individual price of the objects are given within the transaction, the associated total turnover however is not. Next we therefore want to generate a new attribute with the name “total <u>p</u>rice”, the values of which correspond to the product from amount and single price. For this we will use a further operator named “Generate Attributes”, which is located in the group “Data Transformation” – “Attribute Set Reduction and Transformation” – “Generation”. Drag the operator behind the first operator and connect the output port of the data generator with the input port of the new operator and connect the output port of the latter with the result output of the total process. The screen ought to then look roughly like in Fig. 3.6. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Tip: Instead of dragging an operator into the Process View and reconnecting the 61",
+              "html": "Tip: Instead of dragging an operator into the Process View and reconnecting the 61"
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.6: The data is generated first and then a new attribute is produced.",
+              "html": "Figure 3.6: The data is generated first and then a new attribute is produced. "
+            },
+            {
+              "type": "paragraph",
+              "text": "ports, you can also drag the operator onto an existing connection. If you move the cursor position exactly onto the connection, the latter will be highlighted and the new operator will be inserted directly into the connection.",
+              "html": "ports, you can also drag the operator onto an existing connection. If you move the cursor position exactly onto the connection, the latter will be highlighted and the new operator will be inserted directly into the connection. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Even if this process would work now, which is visible from the yellow status indicators and the empty Problems View, then the second operator would not compute anything without a further configuration and the final result would only be the same as that after the first operator. We therefore choose the new operator “Generate Attributes” and select it in this way. The display in the parameter view changes accordingly and the parameters of this operator are shown. The substantial parameter has the name “function descriptions” and is configured on the associated button with one click, as can be seen in Fig. 3.7.",
+              "html": "Even if this process would work now, which is visible from the yellow status indicators and the empty Problems View, then the second operator would not compute anything without a further configuration and the final result would only be the same as that after the first operator. We therefore choose the new operator “Generate Attributes” and select it in this way. The display in the parameter view changes accordingly and the parameters of this operator are shown. The substantial parameter has the name “function descriptions” and is configured on the associated button with one click, as can be seen in Fig. 3.7. "
+            },
+            {
+              "type": "paragraph",
+              "text": "After you have pressed the button with the name “Edit List (0)”, a dialog will open giving you the opportunity to enter the desired computation in Fig. 3.8.",
+              "html": "After you have pressed the button with the name “Edit List (0)”, a dialog will open giving you the opportunity to enter the desired computation in Fig. 3.8. "
+            },
+            {
+              "type": "paragraph",
+              "text": "You can add further entries in such lists of individual parameters with the two actions “Add Entry” and “Remove Entry” and also delete selected entries. The",
+              "html": "You can add further entries in such lists of individual parameters with the two actions “Add Entry” and “Remove Entry” and also delete selected entries. The "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.7: The parameters of the operator “Generate Attributes”.",
+              "html": "Figure 3.7: The parameters of the operator “Generate Attributes”. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.8: Computation of the new attribute “total price” as a product of “amount” and “single price”.",
+              "html": "Figure 3.8: Computation of the new attribute “total <u>p</u>rice” as a product of “amount” and “single <u>p</u>rice”. "
+            },
+            {
+              "type": "paragraph",
+              "text": "names of the desired parameters are in the table heading. Add a row, enter the name of the new attribute on the left and enter the function on the right which computes this new attribute. In this case it is simply the product of two other attributes. Confirm your input with “Apply” and the dialog will close. The button that says “Edit List” ought to show a “1” in brackets, meaning that you can see how many entries the parameter list has and therefore in this case how many new attributes are generated. We can now observe what effect the addition",
+              "html": "names of the desired parameters are in the table heading. Add a row, enter the name of the new attribute on the left and enter the function on the right which computes this new attribute. In this case it is simply the product of two other attributes. Confirm your input with “Apply” and the dialog will close. The button that says “Edit List” ought to show a “1” in brackets, meaning that you can see how many entries the parameter list has and therefore in this case how many new attributes are generated. We can now observe what effect the addition "
+            },
+            {
+              "type": "paragraph",
+              "text": "of the operator “Generate Attributes” has on the meta data. RapidMiner has already transformed the meta data in the background and you can see the new meta data as a tooltip via the output port of the operator (Fig. 3.9).",
+              "html": "of the operator “Generate Attributes” has on the meta data. RapidMiner has already transformed the meta data in the background and you can see the new meta data as a tooltip via the output port of the operator (Fig. 3.9). "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.9: The meta data contains the complete path of the object and re mains, with the exception of the newly added attribute “total price”, unchanged.",
+              "html": "Figure 3.9: The meta data contains the complete path of the object and re mains, with the exception of the newly added attribute “total <u>p</u>rice”, unchanged. "
+            },
+            {
+              "type": "paragraph",
+              "text": "It is easy to see in the line “Generated by” that the last thing the object stemmed from now is the operator “Generate Attributes” and was previously the opera tor “Generate Sales Data”. In addition, hardly anything has changed - both the number of the examples and the eight original attributes have stayed the same. However, a ninth attribute has been added: Our newly defined attribute",
+              "html": "It is easy to see in the line “Generated by” that the last thing the object stemmed from now is the operator “Generate Attributes” and was previously the opera tor “Generate Sales Data”. In addition, hardly anything has changed - both the number of the examples and the eight original attributes have stayed the same. However, a ninth attribute has been added: Our newly defined attribute "
+            },
+            {
+              "type": "paragraph",
+              "text": "“total price” can also now be found in the table.",
+              "html": "“total <u>p</u>rice” can also now be found in the table. "
+            },
+            {
+              "type": "paragraph",
+              "text": "And our process has still not been executed, as you can see just by looking at the status indicators which are still yellow. You may now ask yourself: “And? So I know the result beforehand and without process execution. What do I get from that?”. Well, rather a lot. You can now see at a glance what a particular operator or (sub)process is doing with the input data. Since the meta data is also considerably smaller than the complete data sets, this examination can also be performed much faster than on the complete data. This way you get feedback in the shortest time as to whether there is a problem which may make further data transformation necessary and not only after an analysis process lasting several hours has aborted with an error. And last but not least, RapidMiner Studio can continue processing the information from the meta data and continue supporting you in the design of the process, e.g. through only all attributes that are still available (and newly generated) being displayed on the graphical user interface while attributes are being filtered.",
+              "html": "And our process has still not been executed, as you can see just by looking at the status indicators which are still yellow. You may now ask yourself: “And? So I know the result beforehand and without process execution. What do I get from that?”. Well, rather a lot. You can now see at a glance what a particular operator or (sub)process is doing with the input data. Since the meta data is also considerably smaller than the complete data sets, this examination can also be performed much faster than on the complete data. This way you get feedback in the shortest time as to whether there is a problem which may make further data transformation necessary and not only after an analysis process lasting several hours has aborted with an error. And last but not least, RapidMiner Studio can continue processing the information from the meta data and continue supporting you in the design of the process, e.g. through only all attributes that are still available (and newly generated) being displayed on the graphical user interface while attributes are being filtered. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Now try the following for example: Open the group “Data Transformation” – “At tribute Set Reduction and Transformation” – “Selection” and drag the operator named “Select Attributes” into the process - ideally directly onto the connection after the last operator. Remember that the connection must be highlighted be fore you drop the operator, then it will be correctly reconnected immediately. You should have now defined the process as in Fig. 3.10.",
+              "html": "Now try the following for example: Open the group “Data Transformation” – “At tribute Set Reduction and Transformation” – “Selection” and drag the operator named “Select Attributes” into the process - ideally directly onto the connection after the last operator. Remember that the connection must be highlighted be fore you drop the operator, then it will be correctly reconnected immediately. You should have now defined the process as in Fig. 3.10. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Select the new operator and select the option “subset” in its parameters for the parameter “attribute filter type”. Please note that a further parameter named “attributes” has now appeared. This is in bold, so you would need to define it before you could perform the process. You can also see this from the red status indicator of the operator as well as from the entry in the Problems View. You could now choose the quick fix in the Problems View by double-clicking or simply configure the parameter “attributes”: Again by clicking on a button, this time the one that says “Select Attributes. . . ”. The parameters should be like in Fig. 3.11.",
+              "html": "Select the new operator and select the option “subset” in its parameters for the parameter “attribute filter type”. Please note that a further parameter named “attributes” has now appeared. This is in bold, so you would need to define it before you could perform the process. You can also see this from the red status indicator of the operator as well as from the entry in the Problems View. You could now choose the quick fix in the Problems View by double-clicking or simply configure the parameter “attributes”: Again by clicking on a button, this time the one that says “Select Attributes. . . ”. The parameters should be like in Fig. 3.11. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Now press the button that says “Select Attributes. . . ” and select the attributes “product category”, “store id” and “total price” from the list in the dialog (Fig.",
+              "html": "Now press the button that says “Select Attributes. . . ” and select the attributes “product <u>c</u>ategory”, “store <u>i</u>d” and “total <u>p</u>rice” from the list in the dialog (Fig. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.10: Generation of data, generation of a new attribute, selection of a subset of attributes.",
+              "html": "Figure 3.10: Generation of data, generation of a new attribute, selection of a subset of attributes. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.11: The parameter “attributes” only appears if “subset” has been chosen as the filter type.",
+              "html": "Figure 3.11: The parameter “attributes” only appears if “subset” has been chosen as the filter type. "
+            },
+            {
+              "type": "paragraph",
+              "text": "3.12) that appears either by double-clicking or by pressing the button in the centre with an arrow pointing to the right.",
+              "html": "3.12) that appears either by double-clicking or by pressing the button in the centre with an arrow pointing to the right. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.12: Individual attributes or subsets can be selected or even deleted with the operator “Select Attributes”.",
+              "html": "Figure 3.12: Individual attributes or subsets can be selected or even deleted with the operator “Select Attributes”. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Did you notice? The new attribute “total price”, which had so far only been computed within the meta data transformation, was already ready for you to select here - without you ever having executed the process. If you examine the meta data at the output port again, you will see that only the three selected attributes are left plus the transaction ID, which also has a special role (that of ID) and was therefore not affected by the selection. Since we would like to remove this ID too, select the option “include special attributes” in the parameters of the operator “Select Attributes” and examine the meta data again: Now only the three desired attributes are left. You can find out the effects of these and all other parameters in the description of parameters in the Help View and also in the operator reference.",
+              "html": "Did you notice? The new attribute “total <u>p</u>rice”, which had so far only been computed within the meta data transformation, was already ready for you to select here - without you ever having executed the process. If you examine the meta data at the output port again, you will see that only the three selected attributes are left plus the transaction ID, which also has a special role (that of ID) and was therefore not affected by the selection. Since we would like to remove this ID too, select the option “include special attributes” in the parameters of the operator “Select Attributes” and examine the meta data again: Now only the three desired attributes are left. You can find out the effects of these and all other parameters in the description of parameters in the Help View and also in the operator reference. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Tip: It is a basic rule of RapidMiner Studio that operators from the group “Data 67",
+              "html": "Tip: It is a basic rule of RapidMiner Studio that operators from the group “Data 67"
+            },
+            {
+              "type": "paragraph",
+              "text": "Transformation” are usually only executed on regular attributes, so on those with out a special role. However, the operators offer an option called “include special attributes” for this, meaning that the changes are also applied to those with a special role.",
+              "html": "Transformation” are usually only executed on regular attributes, so on those with out a special role. However, the operators offer an option called “include special attributes” for this, meaning that the changes are also applied to those with a special role. "
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "3-4-executing-processes",
+      "number": "3.4",
+      "title": "Executing Processes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Now we are ready and want to execute the process just created for the first time. The status indicators of all operators should now be yellow and there should be no entries in the Problems View. In such a case it should be possible to execute our process consisting of the three operators (for generating data, computing the total turnover for each transaction and filtering attributes) without any problems.",
+          "html": "Now we are ready and want to execute the process just created for the first time. The status indicators of all operators should now be yellow and there should be no entries in the Problems View. In such a case it should be possible to execute our process consisting of the three operators (for generating data, computing the total turnover for each transaction and filtering attributes) without any problems. "
+        },
+        {
+          "type": "paragraph",
+          "text": "You have the following options for starting the process:",
+          "html": "You have the following options for starting the process: "
+        },
+        {
+          "type": "paragraph",
+          "text": "1. Press the large play button in the toolbar of RapidMiner, 2. Select the menu entry “Process” – “Run”,",
+          "html": "1. Press the large play button in the toolbar of RapidMiner, 2. Select the menu entry “Process” – “Run”, "
+        },
+        {
+          "type": "paragraph",
+          "text": "3. Press F11.",
+          "html": "3. Press F11. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Figure 3.13: The play button starts the process, you can stop the process in be tween with the pause button and stop aborts the process completely.",
+          "html": "Figure 3.13: The play button starts the process, you can stop the process in be tween with the pause button and stop aborts the process completely. "
+        },
+        {
+          "type": "paragraph",
+          "text": "While a process is running, the status indicator of the operator being executed in each case transforms into a small green play icon. This way you can see what point the process is currently at. After an operator has been successfully executed, the status indicator then changes and stays green - until for example you change a parameter for this operator: Then the status indicator will be yellow. The same applies for all operators that follow. This means you can see very quickly on which operators a change could have an effect.",
+          "html": "While a process is running, the status indicator of the operator being executed in each case transforms into a small green play icon. This way you can see what point the process is currently at. After an operator has been successfully executed, the status indicator then changes and stays green - until for example you change a parameter for this operator: Then the status indicator will be yellow. The same applies for all operators that follow. This means you can see very quickly on which operators a change could have an effect. "
+        },
+        {
+          "type": "paragraph",
+          "text": "The process defined above only has a short runtime and so you will hardly have the opportunity to pause the running process. In principle however you can briefly stop a running process with the pause symbol e.g. in order to see an intermediate result. The operator currently being executed is then finished and the process is then stopped. You can recognise a process that is still running but currently paused by the fact that the colour of the play icon changes from blue to green. Press the play button again to continue executing the process further.",
+          "html": "The process defined above only has a short runtime and so you will hardly have the opportunity to pause the running process. In principle however you can briefly stop a running process with the pause symbol e.g. in order to see an intermediate result. The operator currently being executed is then finished and the process is then stopped. You can recognise a process that is still running but currently paused by the fact that the colour of the play icon changes from blue to green. Press the play button again to continue executing the process further. "
+        },
+        {
+          "type": "paragraph",
+          "text": "If you do not wish to merely pause the process but to abort it completely, then you can press the stop button. Just like when pausing, the operator currently being executed is finished and the process fully aborted immediately after. Please note that you can switch to the Design Perspective immediately after aborting the process and make changes to processes, even if the execution of the current operator is being finished in the background. You can even start further processes and do not need to wait for the first process to be completed.",
+          "html": "If you do not wish to merely pause the process but to abort it completely, then you can press the stop button. Just like when pausing, the operator currently being executed is finished and the process fully aborted immediately after. Please note that you can switch to the Design Perspective immediately after aborting the process and make changes to processes, even if the execution of the current operator is being finished in the background. You can even start further processes and do not need to wait for the first process to be completed. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Note: It was explained above that the operator being executed is always com pleted if you abort. This is necessary to ensure a sound execution of operators. However, completing an operator may need much more time in individual cases and also require other resources such as storage space. So when you are aborting very complex operators you can see this taking hours and requiring additional resources, then your only option is to restart the application.",
+          "html": "Note: It was explained above that the operator being executed is always com pleted if you abort. This is necessary to ensure a sound execution of operators. However, completing an operator may need much more time in individual cases and also require other resources such as storage space. So when you are aborting very complex operators you can see this taking hours and requiring additional resources, then your only option is to restart the application. "
+        }
+      ],
+      "subsections": [
+        {
+          "id": "3-4-1-looking-at-results",
+          "number": "3.4.1",
+          "title": "Looking at Results",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "After the process was terminated, RapidMiner Studio should have switched to the Result Perspective (Fig. 3.14). If this was not the case, then you probably did not connect the output port of the last operator with one of the result ports of the process on the right-hand side. Check this and also check for other possible errors, taking the notes in the Problems View into consideration.",
+              "html": "After the process was terminated, RapidMiner Studio should have switched to the Result Perspective (Fig. 3.14). If this was not the case, then you probably did not connect the output port of the last operator with one of the result ports of the process on the right-hand side. Check this and also check for other possible errors, taking the notes in the Problems View into consideration. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Feel free to spend a little time with the results. Since the process above has not yet performed any modelling but only transformed data, the result only consists of an example set. You can look at the meta data of this data set and try out the table plus some of the visualisations in Charts or Advanced Charts. In the next",
+              "html": "Feel free to spend a little time with the results. Since the process above has not yet performed any modelling but only transformed data, the result only consists of an example set. You can look at the meta data of this data set and try out the table plus some of the visualisations in Charts or Advanced Charts. In the next "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.14: After a process has been successfully executed you can look at the results in the Result Perspective.",
+              "html": "Figure 3.14: After a process has been successfully executed you can look at the results in the Result Perspective. "
+            },
+            {
+              "type": "paragraph",
+              "text": "chapter we will talk in detail about the possibilities of the Result Perspective. If you wish to return to the Design Perspective, then you can do this at any time using the switching methods you are familiar with.",
+              "html": "chapter we will talk in detail about the possibilities of the Result Perspective. If you wish to return to the Design Perspective, then you can do this at any time using the switching methods you are familiar with. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Tip: After some time you will want to switch frequently between the Design Per spective and the Result Perspective. Instead of using the icon or the menu entries, you can also use keyboard commands F8 to switch to the Design Perspective and F9 to switch to the Result Perspective.",
+              "html": "Tip: After some time you will want to switch frequently between the Design Per spective and the Result Perspective. Instead of using the icon or the menu entries, you can also use keyboard commands F8 to switch to the Design Perspective and F9 to switch to the Result Perspective. "
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "3-4-2-breakpoints",
+          "number": "3.4.2",
+          "title": "Breakpoints",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Meta data transformation is a very powerful tool for supporting the design of analysis processes and making it much more comfortable. There is simply no longer the necessity to perform the process more often than needed for test pur poses during design. In fact, the expected result can already be estimated on the",
+              "html": "Meta data transformation is a very powerful tool for supporting the design of analysis processes and making it much more comfortable. There is simply no longer the necessity to perform the process more often than needed for test pur poses during design. In fact, the expected result can already be estimated on the "
+            },
+            {
+              "type": "paragraph",
+              "text": "basis of the meta data. Thus meta data transformation and propagation ought to revolutionise the world of data analysis a little: instead of having to perform each step separately as before in order to configure the next operator, the results of several transformations can now be foreseen directly without any execution. This is of course an enormous breakthrough, in particular for the analysis of large data sets.",
+              "html": "basis of the meta data. Thus meta data transformation and propagation ought to revolutionise the world of data analysis a little: instead of having to perform each step separately as before in order to configure the next operator, the results of several transformations can now be foreseen directly without any execution. This is of course an enormous breakthrough, in particular for the analysis of large data sets. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Nevertheless the necessity arises in some cases of going beyond the meta data and seeing a specific result in all its details. When the design is running it is usually no problem to place the desired (intermediate) result at a result port of the process and to execute the process very simply. The desired results are then shown in the Result Perspective. But what can you do if the process has already finished being designed and all output ports are already connected? Or if the intermediate result is deep inside an intricate subprocess? There is of course a sophisticated solution in RapidMiner Studio for this, too, which does not make any process redesign necessary. You can simply insert a so-called breakpoint by selecting one of the options “Breakpoint Before” or “Breakpoint After” from the context menu of an operator, as shown in Fig. 3.15.",
+              "html": "Nevertheless the necessity arises in some cases of going beyond the meta data and seeing a specific result in all its details. When the design is running it is usually no problem to place the desired (intermediate) result at a result port of the process and to execute the process very simply. The desired results are then shown in the Result Perspective. But what can you do if the process has already finished being designed and all output ports are already connected? Or if the intermediate result is deep inside an intricate subprocess? There is of course a sophisticated solution in RapidMiner Studio for this, too, which does not make any process redesign necessary. You can simply insert a so-called breakpoint by selecting one of the options “Breakpoint Before” or “Breakpoint After” from the context menu of an operator, as shown in Fig. 3.15. "
+            },
+            {
+              "type": "paragraph",
+              "text": "If a breakpoint was inserted after an operator for example, then the execution of the process will be interrupted here and the results of all connected output ports will be indicated in the Results Perspective. This means you can look at these results without having to make further changes to the process design. A breakpoint before an operator functions similarly to a breakpoint after an operator: In this case the process will be interrupted before the execution of this operator and the objects next to the connected input ports of this operator are indicated. The fact that a breakpoint is next to an operator is indicated by a small red symbol at the lower edge of the operator (Fig. 3.16).",
+              "html": "If a breakpoint was inserted after an operator for example, then the execution of the process will be interrupted here and the results of all connected output ports will be indicated in the Results Perspective. This means you can look at these results without having to make further changes to the process design. A breakpoint before an operator functions similarly to a breakpoint after an operator: In this case the process will be interrupted before the execution of this operator and the objects next to the connected input ports of this operator are indicated. The fact that a breakpoint is next to an operator is indicated by a small red symbol at the lower edge of the operator (Fig. 3.16). "
+            },
+            {
+              "type": "paragraph",
+              "text": "Tip: The use of “Breakpoint After” in particular is relatively frequent, which is why this action also has a keyboard shortcut. You can add a breakpoint after the operator currently selected or remove all breakpoints currently present by pressing key F7.",
+              "html": "Tip: The use of “Breakpoint After” in particular is relatively frequent, which is why this action also has a keyboard shortcut. You can add a breakpoint after the operator currently selected or remove all breakpoints currently present by pressing key F7. "
+            },
+            {
+              "type": "paragraph",
+              "text": "RapidMiner Studio automatically switches to the Result Perspective in the case of a breakpoint and shows the intermediate results. You can see that you are in a",
+              "html": "RapidMiner Studio automatically switches to the Result Perspective in the case of a breakpoint and shows the intermediate results. You can see that you are in a "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.15: You can stop the process cycle using breakpoints and examine in termediate results.",
+              "html": "Figure 3.15: You can stop the process cycle using breakpoints and examine in termediate results. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.16: A breakpoint is defined before or after this operator.",
+              "html": "Figure 3.16: A breakpoint is defined before or after this operator. "
+            },
+            {
+              "type": "paragraph",
+              "text": "breakpoint at this time and not for example at the end of the process by looking at two indicators: First of all, the status indicator in the bottom left-hand corner of the main window of RapidMiner shows a red light, i.e. a process is running but is not being actively executed at present. If no process at all is running at present, then this indication would just be gray. The second indicator for a breakpoint is the play symbol which is now green instead of blue (Fig. 3.17).",
+              "html": "breakpoint at this time and not for example at the end of the process by looking at two indicators: First of all, the status indicator in the bottom left-hand corner of the main window of RapidMiner shows a red light, i.e. a process is running but is not being actively executed at present. If no process at all is running at present, then this indication would just be gray. The second indicator for a breakpoint is the play symbol which is now green instead of blue (Fig. 3.17). "
+            },
+            {
+              "type": "paragraph",
+              "text": "3.4. Executing Processes",
+              "html": "3.4. Executing Processes "
+            },
+            {
+              "type": "paragraph",
+              "text": "Figure 3.17: The green play symbol indicates that the process is currently in a breakpoint and can continue being executed if pressed.",
+              "html": "Figure 3.17: The green play symbol indicates that the process is currently in a breakpoint and can continue being executed if pressed. "
+            },
+            {
+              "type": "paragraph",
+              "text": "The process can now be started again simply by pressing the green play symbol and continue being executed until completion or until the next breakpoint. You can of course abort the process completely as usual by pressing stop.",
+              "html": "The process can now be started again simply by pressing the green play symbol and continue being executed until completion or until the next breakpoint. You can of course abort the process completely as usual by pressing stop. "
+            },
+            {
+              "type": "paragraph",
+              "text": "4 Data and",
+              "html": "4 Data and "
+            },
+            {
+              "type": "paragraph",
+              "text": "Result Visualization",
+              "html": "Result Visualization "
+            },
+            {
+              "type": "paragraph",
+              "text": "In the previous sections we have seen how the graphical user interface of Rapid Miner Studio is built up and how you can define and execute analysis processes with it. At the end of such a process the results of the process can then be indicated in the Results Perspective. Switch now to this Results Perspective by clicking once in the toolbar. This will be dealt with in detail within this chap ter. Depending on whether you have already produced representable results, you should now see, in the original settings at least, roughly the screen shown in 4.1.",
+              "html": "In the previous sections we have seen how the graphical user interface of Rapid Miner Studio is built up and how you can define and execute analysis processes with it. At the end of such a process the results of the process can then be indicated in the Results Perspective. Switch now to this Results Perspective by clicking once in the toolbar. This will be dealt with in detail within this chap ter. Depending on whether you have already produced representable results, you should now see, in the original settings at least, roughly the screen shown in 4.1. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Otherwise, you can recreate this preset perspective under “View” – “Restore De fault Perspective” as always. The Result Perspective is the second central work ing environment of RapidMiner Studio alongside the Design Perspective already discussed. We have already discussed the Repositories View on the right. In this chapter we will therefore focus on the remaining component of the perspective.",
+              "html": "Otherwise, you can recreate this preset perspective under “View” – “Restore De fault Perspective” as always. The Result Perspective is the second central work ing environment of RapidMiner Studio alongside the Design Perspective already discussed. We have already discussed the Repositories View on the right. In this chapter we will therefore focus on the remaining component of the perspective. "
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ]
+}

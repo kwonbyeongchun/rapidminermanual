@@ -1,0 +1,713 @@
+{
+  "id": "chapter-1",
+  "number": "1",
+  "title": "Fundamental Terms",
+  "slug": "chapter-1-fundamental-terms",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "In this chapter we would like to give you a small incentive for using data mining and at the same time also give you an introduction to the most important terms. Whether you are already an experienced data mining expert or not, this chapter is worth reading in order for you to know and have a command of the terms used both here and in RapidMiner.",
+      "html": "In this chapter we would like to give you a small incentive for using data mining and at the same time also give you an introduction to the most important terms. Whether you are already an experienced data mining expert or not, this chapter is worth reading in order for you to know and have a command of the terms used both here and in RapidMiner. "
+    }
+  ],
+  "sections": [
+    {
+      "id": "1-1-coincidence-or-not",
+      "number": "1.1",
+      "title": "Coincidence or not?",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Before we get properly started, let us try a small experiment: • Think of a number between 1 and 10.",
+          "html": "Before we get properly started, let us try a small experiment: • Think of a number between 1 and 10. "
+        },
+        {
+          "type": "paragraph",
+          "text": "• Multiply this number by 9.",
+          "html": "• Multiply this number by 9. "
+        },
+        {
+          "type": "paragraph",
+          "text": "• Work out the checksum of the result, i.e. the sum of the numbers. • Multiply the result by 4.",
+          "html": "• Work out the checksum of the result, i.e. the sum of the numbers. • Multiply the result by 4. "
+        },
+        {
+          "type": "paragraph",
+          "text": "• Divide the result by 3.",
+          "html": "• Divide the result by 3. "
+        },
+        {
+          "type": "paragraph",
+          "text": "• Deduct 10.",
+          "html": "• Deduct 10. "
+        },
+        {
+          "type": "paragraph",
+          "text": "The result is 2.",
+          "html": "The result is 2. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Do you believe in coincidence? As an analyst you will probably learn to answer this question in the negative or even do so already. Let us take for example what is probably the simplest random event you could imagine, i.e. the toss of a coin. “Ah” you may think, “but that is a random event and nobody can predict which side of the coin will be showing after it is tossed”. That may be correct, but the fact that nobody can predict it does in no way mean that it is impossible in principle. If all influence factors such as the throwing speed and rotation angle, material properties of the coin and those of the ground, mass distributions and even the strength and direction of the wind were all known exactly, then we would be quite able, with some time and effort, to predict the result of such a coin toss. The physical formulas for this are all known in any case.",
+          "html": "Do you believe in coincidence? As an analyst you will probably learn to answer this question in the negative or even do so already. Let us take for example what is probably the simplest random event you could imagine, i.e. the toss of a coin. “Ah” you may think, “but that is a random event and nobody can predict which side of the coin will be showing after it is tossed”. That may be correct, but the fact that nobody can predict it does in no way mean that it is impossible in principle. If all influence factors such as the throwing speed and rotation angle, material properties of the coin and those of the ground, mass distributions and even the strength and direction of the wind were all known exactly, then we would be quite able, with some time and effort, to predict the result of such a coin toss. The physical formulas for this are all known in any case. "
+        },
+        {
+          "type": "paragraph",
+          "text": "We shall now look at another scenario, only this time we can predict the outcome of the situation: A glass will break if it falls from a certain height onto a certain type of ground. We even know in the fractions of the second when the glass is falling: There will be broken glass. How are we able to achieve this rather amazing feat? We have never seen the glass which is falling in this instant break before and the physical formulas that describe the breakage of glass are a complete mystery for most of us at least. Of course, the glass may stay intact “by chance” in individual cases, but this is not likely. For what it’s worth, the glass not breaking would be just as non-coincidental, since this result also follows physical laws. For example, the energy of the impact is transferred to the ground better in this case. So how do we humans know what exactly will happen next in some cases and in other cases, for example that of the toss of a coin, what will not?",
+          "html": "We shall now look at another scenario, only this time we can predict the outcome of the situation: A glass will break if it falls from a certain height onto a certain type of ground. We even know in the fractions of the second when the glass is falling: There will be broken glass. How are we able to achieve this rather amazing feat? We have never seen the glass which is falling in this instant break before and the physical formulas that describe the breakage of glass are a complete mystery for most of us at least. Of course, the glass may stay intact “by chance” in individual cases, but this is not likely. For what it’s worth, the glass not breaking would be just as non-coincidental, since this result also follows physical laws. For example, the energy of the impact is transferred to the ground better in this case. So how do we humans know what exactly will happen next in some cases and in other cases, for example that of the toss of a coin, what will not? "
+        },
+        {
+          "type": "paragraph",
+          "text": "The most frequent explanation used by laymen in this case is the description of the one scenario as “coincidental” and the other as “non-coincidental”. We shall not go into the interesting yet nonetheless rather philosophical discussions on this topic, but we are putting forward the following thesis:",
+          "html": "The most frequent explanation used by laymen in this case is the description of the one scenario as “coincidental” and the other as “non-coincidental”. We shall not go into the interesting yet nonetheless rather philosophical discussions on this topic, but we are putting forward the following thesis: "
+        },
+        {
+          "type": "paragraph",
+          "text": "The vast majority of processes in our perceptible environment are not a result of coincidences. The reason for our inability to describe and extrapolate the processes precisely is rather down to the fact that we are not able to recognise or measure the necessary influence factors or correlate these.",
+          "html": "The vast majority of processes in our perceptible environment are not a result of coincidences. The reason for our inability to describe and extrapolate the processes precisely is rather down to the fact that we are not able to recognise or measure the necessary influence factors or correlate these. "
+        },
+        {
+          "type": "paragraph",
+          "text": "In the case of the falling glass, we quickly recognised the most important char acteristics such as the material, falling height and nature of the ground and can already estimate, in the shortest time, the probability of the glass breaking by analogy reasoning from similar experiences. However, it is just that we cannot do with the toss of a coin. We can watch as many tosses of a coin as we like; we will never manage to recognise the necessary factors fast enough and extrapolate them accordingly in the case of a random throw.",
+          "html": "In the case of the falling glass, we quickly recognised the most important char acteristics such as the material, falling height and nature of the ground and can already estimate, in the shortest time, the probability of the glass breaking by analogy reasoning from similar experiences. However, it is just that we cannot do with the toss of a coin. We can watch as many tosses of a coin as we like; we will never manage to recognise the necessary factors fast enough and extrapolate them accordingly in the case of a random throw. "
+        },
+        {
+          "type": "paragraph",
+          "text": "So what were we doing in our heads when we made the prediction for the state of the glass after the impact? We measured the characteristics of this event. You could also say that we collected data describing the fall of the glass. We then reasoned very quickly by analogy, i.e. we made a comparison with earlier falling glasses, cups, porcelain figurines or similar articles based on a similarity measure. Two things are necessary for this: firstly, we need to also have the data of earlier events available and secondly, we need to be aware of how a similarity between the current and past data is defined at all. Ultimately we are able to make an estimation or prediction by having looked at the most similar events that have already taken place for example. Did the falling article break in these cases or not? We must first find the events with the greatest similarity, which represents a kind of optimisation. We use the term ”optimisation“ here, since it is actually unimportant whether we are now maximising a similarity or the sales figures of one enterprise or any other - the variable concerned, so similarity here, is always optimised. The analogy reasoning described then tells us that the majority of glasses we have already looked at broke and this very estimation then becomes our prediction. This may sound complicated, but this kind of analogy reasoning is basically the foundation for almost every human learning process and is done at a staggering speed.",
+          "html": "So what were we doing in our heads when we made the prediction for the state of the glass after the impact? We measured the characteristics of this event. You could also say that we collected data describing the fall of the glass. We then reasoned very quickly by analogy, i.e. we made a comparison with earlier falling glasses, cups, porcelain figurines or similar articles based on a similarity measure. Two things are necessary for this: firstly, we need to also have the data of earlier events available and secondly, we need to be aware of how a similarity between the current and past data is defined at all. Ultimately we are able to make an estimation or prediction by having looked at the most similar events that have already taken place for example. Did the falling article break in these cases or not? We must first find the events with the greatest similarity, which represents a kind of optimisation. We use the term ”optimisation“ here, since it is actually unimportant whether we are now maximising a similarity or the sales figures of one enterprise or any other - the variable concerned, so similarity here, is always optimised. The analogy reasoning described then tells us that the majority of glasses we have already looked at broke and this very estimation then becomes our prediction. This may sound complicated, but this kind of analogy reasoning is basically the foundation for almost every human learning process and is done at a staggering speed. "
+        },
+        {
+          "type": "paragraph",
+          "text": "The interesting thing about this is that we have just been acting as a human data mining method, since data analysis usually involves matters such as the repre sentation of events or conditions and the data resulting from this, the definition of events’ similarities and of the optimisation of these similarities.",
+          "html": "The interesting thing about this is that we have just been acting as a human data mining method, since data analysis usually involves matters such as the repre sentation of events or conditions and the data resulting from this, the definition of events’ similarities and of the optimisation of these similarities. "
+        },
+        {
+          "type": "paragraph",
+          "text": "However, the described procedure of analogy reasoning is not possible with the toss of a coin: It is usually insufficient at the first step and the data for factors",
+          "html": "However, the described procedure of analogy reasoning is not possible with the toss of a coin: It is usually insufficient at the first step and the data for factors "
+        },
+        {
+          "type": "paragraph",
+          "text": "such as material properties or ground unevenness cannot be recorded. Therefore we cannot have these ready for later analogy reasoning. This does in no way mean however that the event of a coin toss is coincidental, but merely shows that we humans are not able to measure these influence factors and describe the process. In other cases we may be quite able to measure the influence factors, but we are not able to correlate these purposefully, meaning that computing similarity or even describing the processes is impossible for us.",
+          "html": "such as material properties or ground unevenness cannot be recorded. Therefore we cannot have these ready for later analogy reasoning. This does in no way mean however that the event of a coin toss is coincidental, but merely shows that we humans are not able to measure these influence factors and describe the process. In other cases we may be quite able to measure the influence factors, but we are not able to correlate these purposefully, meaning that computing similarity or even describing the processes is impossible for us. "
+        },
+        {
+          "type": "paragraph",
+          "text": "It is by no means the case that analogy reasoning is the only way of deducing forecasts for new situations from already known information. If the observer of a falling glass is asked how he knows that the glass will break, then the answer will often include things like “every time I have seen a glass fall from a height of more than 1.5 metres it has broken”. There are two interesting points here: The relation to past experiences using the term “always” as well as the deduction of a rule from these experiences:",
+          "html": "It is by no means the case that analogy reasoning is the only way of deducing forecasts for new situations from already known information. If the observer of a falling glass is asked how he knows that the glass will break, then the answer will often include things like “every time I have seen a glass fall from a height of more than 1.5 metres it has broken”. There are two interesting points here: The relation to past experiences using the term “always” as well as the deduction of a rule from these experiences: "
+        },
+        {
+          "type": "paragraph",
+          "text": "If the falling article is made of glass and the falling height is more than 1.5 metres, then the glass will break.",
+          "html": "If the falling article is made of glass and the falling height is more than 1.5 metres, then the glass will break. "
+        },
+        {
+          "type": "paragraph",
+          "text": "The introduction of a threshold value like 1.5 metres is a fascinating aspect of this rule formation. For although not every glass will break immediately if greater heights are used and will not necessarily remain intact in the case of lower heights, introducing this threshold value transforms the rule into a rule of thumb, which may not always, but will mostly lead to a correct estimate of the situation. Instead of therefore reasoning by analogy straight away, one could now use this rule of thumb and would soon reach a decision as to the most probable future of the falling article. Analogy reasoning and the creation of rules are two first examples of how humans, and also data mining methods, are able to anticipate the outcome of new and unknown situations.",
+          "html": "The introduction of a threshold value like 1.5 metres is a fascinating aspect of this rule formation. For although not every glass will break immediately if greater heights are used and will not necessarily remain intact in the case of lower heights, introducing this threshold value transforms the rule into a rule of thumb, which may not always, but will mostly lead to a correct estimate of the situation. Instead of therefore reasoning by analogy straight away, one could now use this rule of thumb and would soon reach a decision as to the most probable future of the falling article. Analogy reasoning and the creation of rules are two first examples of how humans, and also data mining methods, are able to anticipate the outcome of new and unknown situations. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Our description of what goes on in our heads and also in most data mining methods on the computer reveals yet another interesting insight: The analogy reasoning described does at no time require the knowledge of any physical formula to say why the glass will now break. The same applies for the rule of thumb described above. So even without knowing the complete (physical) description of a process, we and the data mining method are equally able to generate an",
+          "html": "Our description of what goes on in our heads and also in most data mining methods on the computer reveals yet another interesting insight: The analogy reasoning described does at no time require the knowledge of any physical formula to say why the glass will now break. The same applies for the rule of thumb described above. So even without knowing the complete (physical) description of a process, we and the data mining method are equally able to generate an "
+        },
+        {
+          "type": "paragraph",
+          "text": "estimation of situations or even predictions. Not only was the causal relationship itself not described here, but even the data acquisition was merely superficial and rough and only a few factors such as the material of the falling article (glass) and the falling height (approx. 2m) were indicated, and relatively inaccurately at that.",
+          "html": "estimation of situations or even predictions. Not only was the causal relationship itself not described here, but even the data acquisition was merely superficial and rough and only a few factors such as the material of the falling article (glass) and the falling height (approx. 2m) were indicated, and relatively inaccurately at that. "
+        },
+        {
+          "type": "paragraph",
+          "text": "Causal chains therefore exist whether we know them or not. In the latter case we are often inclined to refer to them as coincidental. And it is equally amazing that describing the further course is possible even for an unknown causal chain, and even in situations where the past facts are incomplete and only described inaccurately.",
+          "html": "Causal chains therefore exist whether we know them or not. In the latter case we are often inclined to refer to them as coincidental. And it is equally amazing that describing the further course is possible even for an unknown causal chain, and even in situations where the past facts are incomplete and only described inaccurately. "
+        },
+        {
+          "type": "paragraph",
+          "text": "This section has given you an idea of the kind of problems we wish to address in this book. We will be dealing with numerous influence factors, some of which can only be measured insufficiently or not at all. At the same time there are often so many of these factors that we risk losing track. In addition, we also have to deal with the events which have already taken place, which we wish to use for modelling and the number of which easily goes into millions or billions. Last but not least, we must ask ourselves whether describing the process is the goal or whether analogy reasoning is already sufficient to make a prediction. And in addition, this must all take place in a dynamic environment under constantly changing conditions - and preferably as soon as possible. Impossible for humans? Correct. But not impossible for data mining methods.",
+          "html": "This section has given you an idea of the kind of problems we wish to address in this book. We will be dealing with numerous influence factors, some of which can only be measured insufficiently or not at all. At the same time there are often so many of these factors that we risk losing track. In addition, we also have to deal with the events which have already taken place, which we wish to use for modelling and the number of which easily goes into millions or billions. Last but not least, we must ask ourselves whether describing the process is the goal or whether analogy reasoning is already sufficient to make a prediction. And in addition, this must all take place in a dynamic environment under constantly changing conditions - and preferably as soon as possible. Impossible for humans? Correct. But not impossible for data mining methods. "
+        }
+      ],
+      "subsections": []
+    },
+    {
+      "id": "1-2-fundamental-terms",
+      "number": "1.2",
+      "title": "Fundamental Terms",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "We are now going to introduce some fundamental terms which will make dealing with the problems described easier for us. You will come across these terms again and again in the RapidMiner software too, meaning it is worth becoming acquainted with the terms used even if you are an experienced data analyst.",
+          "html": "We are now going to introduce some fundamental terms which will make dealing with the problems described easier for us. You will come across these terms again and again in the RapidMiner software too, meaning it is worth becoming acquainted with the terms used even if you are an experienced data analyst. "
+        },
+        {
+          "type": "paragraph",
+          "text": "First of all we can see what the two examples looked at in the previous section, namely the toss of a coin and the falling glass, have in common. In our discussion on whether we are able to predict the end of the respective situation, we realised",
+          "html": "First of all we can see what the two examples looked at in the previous section, namely the toss of a coin and the falling glass, have in common. In our discussion on whether we are able to predict the end of the respective situation, we realised "
+        },
+        {
+          "type": "paragraph",
+          "text": "that knowing the influence factors as accurately as possible, such as material properties or the nature of the ground, is important. And one can even try to find an answer to the question as to whether this book will help you by recording the characteristics of yourself, the reader, and aligning them with the results of a survey of some of the past readers. These measured reader characteristics could be for example the educational background of the person concerned, the liking of statistics, preferences with other, possibly similar books and further features which we could also measure as part of our survey. If we now knew such characteristics of 100 readers and had the indication as to whether you like the book or not in addition, then the further process would be almost trivial. We would also ask you the questions from our survey and measure the same features in this way and then, for example using analogy reasoning as described above, generate a reliable prediction of your personal taste. “Customers who bought this book also bought. . . ”. This probably rings a bell.",
+          "html": "that knowing the influence factors as accurately as possible, such as material properties or the nature of the ground, is important. And one can even try to find an answer to the question as to whether this book will help you by recording the characteristics of yourself, the reader, and aligning them with the results of a survey of some of the past readers. These measured reader characteristics could be for example the educational background of the person concerned, the liking of statistics, preferences with other, possibly similar books and further features which we could also measure as part of our survey. If we now knew such characteristics of 100 readers and had the indication as to whether you like the book or not in addition, then the further process would be almost trivial. We would also ask you the questions from our survey and measure the same features in this way and then, for example using analogy reasoning as described above, generate a reliable prediction of your personal taste. “Customers who bought this book also bought. . . ”. This probably rings a bell. "
+        }
+      ],
+      "subsections": [
+        {
+          "id": "1-2-1-attributes-and-target-attributes",
+          "number": "1.2.1",
+          "title": "Attributes and Target Attributes",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Whether coins or other falling articles or even humans, there is, as previously mentioned, the question in all scenarios as to the characteristics or features of the respective situation. We will always speak of attributes in the following when we mean such describing factors of a scenario. This is also the term that is always used in the RapidMiner software when such describing features arise. There are many synonyms for this term and depending on your own background you will have already come across different terms instead of “attribute”, for example",
+              "html": "Whether coins or other falling articles or even humans, there is, as previously mentioned, the question in all scenarios as to the characteristics or features of the respective situation. We will always speak of attributes in the following when we mean such describing factors of a scenario. This is also the term that is always used in the RapidMiner software when such describing features arise. There are many synonyms for this term and depending on your own background you will have already come across different terms instead of “attribute”, for example "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Characteristic,",
+              "html": "• Characteristic, "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Feature,",
+              "html": "• Feature, "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Influence factor (or just factor),",
+              "html": "• Influence factor (or just factor), "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Indicator,",
+              "html": "• Indicator, "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Variable or",
+              "html": "• Variable or "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Signal.",
+              "html": "• Signal. "
+            },
+            {
+              "type": "paragraph",
+              "text": "We have seen that description by attributes is possible for processes and also for situations. This is necessary for the description of technical processes for example and the thought of the falling glass is not too far off here. If it is possible to predict the outcome of such a situation then why not also the quality of a produced component? Or the imminent failure of a machine? Other processes or situations which have no technical reference can also be described in the same way. How can I predict the success of a sales or marketing promotion? Which article will a customer buy next? How many more accidents will an insurance company probably have to cover for a particular customer or customer group?",
+              "html": "We have seen that description by attributes is possible for processes and also for situations. This is necessary for the description of technical processes for example and the thought of the falling glass is not too far off here. If it is possible to predict the outcome of such a situation then why not also the quality of a produced component? Or the imminent failure of a machine? Other processes or situations which have no technical reference can also be described in the same way. How can I predict the success of a sales or marketing promotion? Which article will a customer buy next? How many more accidents will an insurance company probably have to cover for a particular customer or customer group? "
+            },
+            {
+              "type": "paragraph",
+              "text": "We shall use such a customer scenario in order to introduce the remaining im portant terms. Firstly, because humans are famously better at understanding examples about other humans. And secondly, because each enterprise proba bly has information, i.e. attributes, regarding their customers and most readers can therefore relate to the examples immediately. The attributes available as a minimum, which just about every enterprise keeps about its customers, are for example geographical data and information as to which products or services the customer has already purchased. You would be surprised what forecasts can be made even from such a small amount of attributes.",
+              "html": "We shall use such a customer scenario in order to introduce the remaining im portant terms. Firstly, because humans are famously better at understanding examples about other humans. And secondly, because each enterprise proba bly has information, i.e. attributes, regarding their customers and most readers can therefore relate to the examples immediately. The attributes available as a minimum, which just about every enterprise keeps about its customers, are for example geographical data and information as to which products or services the customer has already purchased. You would be surprised what forecasts can be made even from such a small amount of attributes. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Let us look at an (admittedly somewhat contrived) example. Let us assume that you work in an enterprise that would like to offer its customers products in future which are better tailored to their needs. Within a customer study of only 100 of your customers some needs became clear, which 62 of these 100 customers share all the same. Your research and development department got straight to work and developed a new product within the shortest time, which would satisfy these new needs better. Most of the 62 customers with the relevant needs profile are impressed by the prototype in any case, although most of the remaining participants of the study only show a small interest as expected. Still, a total of 54 of the 100 customers in the study said that they found the new product useful. The prototype is therefore evaluated as successful and goes into production - now only the question remains as to how, from your existing customers or even from other potential customers, you are going to pick out exactly the customers with whom the subsequent marketing and sales efforts promise the greatest success. You would therefore like to optimise your efficiency in this area, which means in",
+              "html": "Let us look at an (admittedly somewhat contrived) example. Let us assume that you work in an enterprise that would like to offer its customers products in future which are better tailored to their needs. Within a customer study of only 100 of your customers some needs became clear, which 62 of these 100 customers share all the same. Your research and development department got straight to work and developed a new product within the shortest time, which would satisfy these new needs better. Most of the 62 customers with the relevant needs profile are impressed by the prototype in any case, although most of the remaining participants of the study only show a small interest as expected. Still, a total of 54 of the 100 customers in the study said that they found the new product useful. The prototype is therefore evaluated as successful and goes into production - now only the question remains as to how, from your existing customers or even from other potential customers, you are going to pick out exactly the customers with whom the subsequent marketing and sales efforts promise the greatest success. You would therefore like to optimise your efficiency in this area, which means in "
+            },
+            {
+              "type": "paragraph",
+              "text": "particular ruling out such efforts from the beginning which are unlikely to lead to a purchase. But how can that be done? The need for alternative solutions and thus the interest in the new product arose within the customer study on a subset of your customers. Performing this study for all your customers is much too costly and so this option is closed to you. And this is exactly where data mining can help. Let us first look at a possible selection of attributes regarding your customers:",
+              "html": "particular ruling out such efforts from the beginning which are unlikely to lead to a purchase. But how can that be done? The need for alternative solutions and thus the interest in the new product arose within the customer study on a subset of your customers. Performing this study for all your customers is much too costly and so this option is closed to you. And this is exactly where data mining can help. Let us first look at a possible selection of attributes regarding your customers: "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Name",
+              "html": "• Name "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Address",
+              "html": "• Address "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Sector",
+              "html": "• Sector "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Subsector",
+              "html": "• Subsector "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of employees",
+              "html": "• Number of employees "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of purchases in product group 1",
+              "html": "• Number of purchases in product group 1 "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of purchases in product group 2",
+              "html": "• Number of purchases in product group 2 "
+            },
+            {
+              "type": "paragraph",
+              "text": "The number of purchases in the different product groups means the transactions in your product groups which you have already made with this customer in the past. There can of course be more or less or even entirely different attributes in your case, but this is irrelevant at this stage. Let us assume that you have the information available regarding these attributes for every one of your customers. Then there is another attribute which we can look at for our concrete scenario: The fact whether the customer likes the prototype or not. This attribute is of course only available for the 100 customers from the study; the information on this attribute is simply unknown for the others. Nevertheless, we also include the attribute in the list of our attributes:",
+              "html": "The number of purchases in the different product groups means the transactions in your product groups which you have already made with this customer in the past. There can of course be more or less or even entirely different attributes in your case, but this is irrelevant at this stage. Let us assume that you have the information available regarding these attributes for every one of your customers. Then there is another attribute which we can look at for our concrete scenario: The fact whether the customer likes the prototype or not. This attribute is of course only available for the 100 customers from the study; the information on this attribute is simply unknown for the others. Nevertheless, we also include the attribute in the list of our attributes: "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Prototype positively received?",
+              "html": "• Prototype positively received? "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Name",
+              "html": "• Name "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Address",
+              "html": "• Address "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Sector",
+              "html": "• Sector "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Subsector",
+              "html": "• Subsector "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of employees",
+              "html": "• Number of employees "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of purchases in product group 1",
+              "html": "• Number of purchases in product group 1 "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of purchases in product group 2",
+              "html": "• Number of purchases in product group 2 "
+            },
+            {
+              "type": "paragraph",
+              "text": "If we assume you have thousands of customers in total, then you can only indicate whether 100 of these evaluated the prototype positively or not. You do not yet know what the others think, but you would like to! The attribute “prototype positively received” thus adopts a special role, since it identifies every one of your customers in relation to the current question. We therefore also call this special attribute label, since it sticks to your customers and identifies them like a brand label on a shirt or even a note on a pinboard. You will also find attributes which adopt this special role in RapidMiner under the name “label”. The goal of our efforts is to fill out this particular attribute for the total quantity of all customers. We will therefore also often speak of target attribute in this book instead of the term “label”. You will also frequently discover the term goal variable in the literature, which means the same thing.",
+              "html": "If we assume you have thousands of customers in total, then you can only indicate whether 100 of these evaluated the prototype positively or not. You do not yet know what the others think, but you would like to! The attribute “prototype positively received” thus adopts a special role, since it identifies every one of your customers in relation to the current question. We therefore also call this special attribute label, since it sticks to your customers and identifies them like a brand label on a shirt or even a note on a pinboard. You will also find attributes which adopt this special role in RapidMiner under the name “label”. The goal of our efforts is to fill out this particular attribute for the total quantity of all customers. We will therefore also often speak of target attribute in this book instead of the term “label”. You will also frequently discover the term goal variable in the literature, which means the same thing. "
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "1-2-2-concepts-and-examples",
+          "number": "1.2.2",
+          "title": "Concepts and Examples",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "The structuring of your customers’ characteristics by attributes, introduced above, already helps us to tackle the problem a bit more analytically. In this way we ensured that every one of your customers is represented in the same way. In a certain sense we defined the type or concept “customer”, which differs consider ably from other concepts such as “falling articles” in that customers will typically have no material properties and falling articles will only rarely buy in product group 1. It is important that, for each of the problems in this book (or even those in your own practice), you first define which concepts you are actually dealing with and which attributes these are defined by.",
+              "html": "The structuring of your customers’ characteristics by attributes, introduced above, already helps us to tackle the problem a bit more analytically. In this way we ensured that every one of your customers is represented in the same way. In a certain sense we defined the type or concept “customer”, which differs consider ably from other concepts such as “falling articles” in that customers will typically have no material properties and falling articles will only rarely buy in product group 1. It is important that, for each of the problems in this book (or even those in your own practice), you first define which concepts you are actually dealing with and which attributes these are defined by. "
+            },
+            {
+              "type": "paragraph",
+              "text": "We implicitly defined above, by indicating the attributes name, address, sector 9",
+              "html": "We implicitly defined above, by indicating the attributes name, address, sector 9"
+            },
+            {
+              "type": "paragraph",
+              "text": "etc. and in particular the purchase transactions in the individual product groups, that objects of the concept “customer” are described by these attributes. Yet this concept has remained relatively abstract so far and no life has been injected into it yet. Although we now know in what way we can describe customers, we have not yet performed this for specific customers. Let us look at the attributes of the following customer for example:",
+              "html": "etc. and in particular the purchase transactions in the individual product groups, that objects of the concept “customer” are described by these attributes. Yet this concept has remained relatively abstract so far and no life has been injected into it yet. Although we now know in what way we can describe customers, we have not yet performed this for specific customers. Let us look at the attributes of the following customer for example: "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Prototype positively received: yes",
+              "html": "• Prototype positively received: yes "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Name: Doe Systems, Inc.",
+              "html": "• Name: Doe Systems, Inc. "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Address: 76 Any Street, Sunnyville, Massachusetts",
+              "html": "• Address: 76 Any Street, Sunnyville, Massachusetts "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Sector: Mechanics",
+              "html": "• Sector: Mechanics "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Subsector: Pipe bending machines",
+              "html": "• Subsector: Pipe bending machines "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of employees: > 1000",
+              "html": "• Number of employees: > 1000 "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of purchases in product group 1: 5",
+              "html": "• Number of purchases in product group 1: 5 "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of purchases in product group 2: 0",
+              "html": "• Number of purchases in product group 2: 0 "
+            },
+            {
+              "type": "paragraph",
+              "text": "We say that this specific customer is an example for our concept “customer”. Each example can be characterised by its attributes and has concrete values for these attributes which can be compared with those of other examples. In the case described above, Doe Systems, Inc. is also an example of a customer who participated in our study. There is therefore a value available for our target attribute “prototype positively received?”. Doe Systems was happy and has “yes” as an attribute value here, thus we also speak of a positive example. Logically, there are also negative examples and examples which do not allow us to make any statement about the target attribute.",
+              "html": "We say that this specific customer is an example for our concept “customer”. Each example can be characterised by its attributes and has concrete values for these attributes which can be compared with those of other examples. In the case described above, Doe Systems, Inc. is also an example of a customer who participated in our study. There is therefore a value available for our target attribute “prototype positively received?”. Doe Systems was happy and has “yes” as an attribute value here, thus we also speak of a positive example. Logically, there are also negative examples and examples which do not allow us to make any statement about the target attribute. "
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "1-2-3-attribute-roles",
+          "number": "1.2.3",
+          "title": "Attribute Roles",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "We have now already become acquainted with two different kinds of attributes, i.e. those which simply describe the examples and those which identify the examples",
+              "html": "We have now already become acquainted with two different kinds of attributes, i.e. those which simply describe the examples and those which identify the examples "
+            },
+            {
+              "type": "paragraph",
+              "text": "separately. Attributes can thus adopt different roles. We have already introduced the role “label” for attributes which identify the examples in any way and which must be predicted for new examples that are not yet characterised in such a manner. In our scenario described above the label still describes (if present) the characteristic of whether the prototype was received positively.",
+              "html": "separately. Attributes can thus adopt different roles. We have already introduced the role “label” for attributes which identify the examples in any way and which must be predicted for new examples that are not yet characterised in such a manner. In our scenario described above the label still describes (if present) the characteristic of whether the prototype was received positively. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Likewise, there are for example roles, the associated attribute of which serves for clearly identifying the example concerned. In this case the attribute adopts the role of an identifier and is called ID for short. You will find such attributes iden tified with this role in the RapidMiner software also. In our customer scenario, the attribute “name” could adopt the role of such an identifier.",
+              "html": "Likewise, there are for example roles, the associated attribute of which serves for clearly identifying the example concerned. In this case the attribute adopts the role of an identifier and is called ID for short. You will find such attributes iden tified with this role in the RapidMiner software also. In our customer scenario, the attribute “name” could adopt the role of such an identifier. "
+            },
+            {
+              "type": "paragraph",
+              "text": "There are even more roles, such as those with an attribute that designates the weight of the example with regard to the label. In this case the role has the name Weight. Attributes without a special role, i.e. those which simply describe the examples, are also called regular attributes and just leave out the role desig nation in most cases. Apart from that you have the option in RapidMiner of allocating your own roles and of therefore identifying your attributes separately in their meaning.",
+              "html": "There are even more roles, such as those with an attribute that designates the weight of the example with regard to the label. In this case the role has the name Weight. Attributes without a special role, i.e. those which simply describe the examples, are also called regular attributes and just leave out the role desig nation in most cases. Apart from that you have the option in RapidMiner of allocating your own roles and of therefore identifying your attributes separately in their meaning. "
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "1-2-4-value-types",
+          "number": "1.2.4",
+          "title": "Value Types",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "As well as the different roles of an attribute there is also a second characteristic of attributes which is worth looking at more closely. The example of Doe Systems above defined the respective values for the different attributes, for example “Doe Systems, Inc.” for the attribute “Name” and the value “5” for the number of past purchases in product group 1. Regarding the attribute “Name”, the concrete value for this example is therefore random free text to a certain extent; for the attribute “number of purchases in product group 1” on the other hand, the indication of a number must correspond. We call the indication whether the values of an attribute must be in text or numbers the Value Type of an attribute.",
+              "html": "As well as the different roles of an attribute there is also a second characteristic of attributes which is worth looking at more closely. The example of Doe Systems above defined the respective values for the different attributes, for example “Doe Systems, Inc.” for the attribute “Name” and the value “5” for the number of past purchases in product group 1. Regarding the attribute “Name”, the concrete value for this example is therefore random free text to a certain extent; for the attribute “number of purchases in product group 1” on the other hand, the indication of a number must correspond. We call the indication whether the values of an attribute must be in text or numbers the Value Type of an attribute. "
+            },
+            {
+              "type": "paragraph",
+              "text": "In later chapters we will become acquainted with many different value types and see how these can also be transformed into other types. For the moment we just",
+              "html": "In later chapters we will become acquainted with many different value types and see how these can also be transformed into other types. For the moment we just "
+            },
+            {
+              "type": "paragraph",
+              "text": "need to know that there are different value types for attributes and that we speak of value type text in the case of free text, of the value type numerical in the case of numbers and of the value type nominal in the case of only few values being possible (like with the two possibilities “yes” and “no” for the target attribute). Please note that in the above example the number of employees, although really of numerical type, would rather be defined as nominal, since a size class, i.e. “> 1000” was used instead of an exact indication like 1250 employees.",
+              "html": "need to know that there are different value types for attributes and that we speak of value type text in the case of free text, of the value type numerical in the case of numbers and of the value type nominal in the case of only few values being possible (like with the two possibilities “yes” and “no” for the target attribute). Please note that in the above example the number of employees, although really of numerical type, would rather be defined as nominal, since a size class, i.e. “> 1000” was used instead of an exact indication like 1250 employees. "
+            },
+            {
+              "type": "paragraph",
+              "text": "The following table will give you an overview of all value types supported by RapidMiner:",
+              "html": "The following table will give you an overview of all value types supported by RapidMiner: "
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Value type",
+                  "RapidMiner name",
+                  "Use"
+                ],
+                [
+                  "Nominal",
+                  "nominal",
+                  "Categorical non-numerical values, usually used for finite quantities of different characteristics"
+                ],
+                [
+                  "Numerical values",
+                  "numeric",
+                  "For numerical values in general"
+                ],
+                [
+                  "Integers",
+                  "integer",
+                  "Whole numbers, positive and nega tive"
+                ],
+                [
+                  "Real numbers",
+                  "real",
+                  "Real numbers, positive and negative"
+                ],
+                [
+                  "Text",
+                  "text",
+                  "Random free text without structure"
+                ],
+                [
+                  "2-value nominal",
+                  "binominal",
+                  "Special case of nominal, where only two different values are permitted"
+                ],
+                [
+                  "multi-value nomi nal",
+                  "polynominal",
+                  "Special case of nominal, where more than two different values are permit ted"
+                ],
+                [
+                  "Date Time",
+                  "date time",
+                  "Date as well as time"
+                ],
+                [
+                  "Date",
+                  "date",
+                  "Only date"
+                ],
+                [
+                  "Time",
+                  "time",
+                  "Only time"
+                ]
+              ]
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "1-2-5-data-and-meta-data",
+          "number": "1.2.5",
+          "title": "Data and Meta Data",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "We want to summarise our initial situation one more time. We have a Concept “customer” available, which we will describe with a set of Attributes:",
+              "html": "We want to summarise our initial situation one more time. We have a Concept “customer” available, which we will describe with a set of Attributes: "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Prototype positively received? Label; Nominal",
+              "html": "• Prototype positively received? Label; Nominal "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Name: Text",
+              "html": "• Name: Text "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Address: Text",
+              "html": "• Address: Text "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Sector: Nominal",
+              "html": "• Sector: Nominal "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Subsector: Nominal",
+              "html": "• Subsector: Nominal "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of employees: Nominal",
+              "html": "• Number of employees: Nominal "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of purchases in product group 1: Numerical",
+              "html": "• Number of purchases in product group 1: Numerical "
+            },
+            {
+              "type": "paragraph",
+              "text": "• Number of purchases in product group 2: Numerical",
+              "html": "• Number of purchases in product group 2: Numerical "
+            },
+            {
+              "type": "paragraph",
+              "text": "The attribute “Prototype positively received?” has a special Role among the attributes; it is our Target Attribute here. The target attribute has the Value Type Nominal, which means that only relatively few characteristics (in this case “yes” and “no”) can be accepted. Strictly speaking it is even binominal, since only two different characteristics are permitted. The remaining attributes all have no special role, i.e. they are regular and have either the value type Numerical or Text. The following definition is very important, since it plays a crucial role in a successful professional data analysis:",
+              "html": "The attribute “Prototype positively received?” has a special Role among the attributes; it is our Target Attribute here. The target attribute has the Value Type Nominal, which means that only relatively few characteristics (in this case “yes” and “no”) can be accepted. Strictly speaking it is even binominal, since only two different characteristics are permitted. The remaining attributes all have no special role, i.e. they are regular and have either the value type Numerical or Text. The following definition is very important, since it plays a crucial role in a successful professional data analysis: "
+            },
+            {
+              "type": "paragraph",
+              "text": "This volume of information which describes a concept is also called meta data, since it represents data via the actual data.",
+              "html": "This volume of information which describes a concept is also called meta data, since it represents data via the actual data. "
+            },
+            {
+              "type": "paragraph",
+              "text": "Our fictitious enterprise has a number of Examples for our concept “customer”, i.e. the information which the enterprise has stored for the individual attributes in its customer database. The goal is now to generate a prediction instruction from the examples for which information is available concerning the target attribute, which predicts for us whether the remaining customers would be more likely to",
+              "html": "Our fictitious enterprise has a number of Examples for our concept “customer”, i.e. the information which the enterprise has stored for the individual attributes in its customer database. The goal is now to generate a prediction instruction from the examples for which information is available concerning the target attribute, which predicts for us whether the remaining customers would be more likely to "
+            },
+            {
+              "type": "paragraph",
+              "text": "receive the prototype positively or reject it. The search for such a prediction instruction is one of the tasks which can be performed with data mining.",
+              "html": "receive the prototype positively or reject it. The search for such a prediction instruction is one of the tasks which can be performed with data mining. "
+            },
+            {
+              "type": "paragraph",
+              "text": "However, it is important here that the information for the attributes of the indi vidual examples is in an ordered form, so that the data mining method can access it by means of a computer. What would be more obvious here than a table? Each of the attributes defines a column and each example with the different attribute values corresponds to a row of this table. For our scenario this could look like in table 1.1 for example.",
+              "html": "However, it is important here that the information for the attributes of the indi vidual examples is in an ordered form, so that the data mining method can access it by means of a computer. What would be more obvious here than a table? Each of the attributes defines a column and each example with the different attribute values corresponds to a row of this table. For our scenario this could look like in table 1.1 for example. "
+            },
+            {
+              "type": "paragraph",
+              "text": "We call such a table an Example Set, since this table contains the data for all the attributes of our examples. In the following and also within RapidMiner we will use the terms Data, Data Set and Example Set synonymously. A table with the appropriate entries for the attribute values of the current examples is always meant in this case. It is also such data tables which have lent their name to data analysis or data mining. Note:",
+              "html": "We call such a table an Example Set, since this table contains the data for all the attributes of our examples. In the following and also within RapidMiner we will use the terms Data, Data Set and Example Set synonymously. A table with the appropriate entries for the attribute values of the current examples is always meant in this case. It is also such data tables which have lent their name to data analysis or data mining. Note: "
+            },
+            {
+              "type": "paragraph",
+              "text": "Data describes the objects of a concept, Meta Data describes the characteristics of a concept (and therefore also of the data).",
+              "html": "Data describes the objects of a concept, Meta Data describes the characteristics of a concept (and therefore also of the data). "
+            },
+            {
+              "type": "paragraph",
+              "text": "Most data mining methods expect the examples to be given in such an attribute value table. Fortunately, this is the case here and we can spare ourselves any further data transformations. In practice however this is completely different and the majority of work during a data analysis is time spent transferring the data into a format suitable for data mining. These transformations are therefore dealt with in detail in later chapters.",
+              "html": "Most data mining methods expect the examples to be given in such an attribute value table. Fortunately, this is the case here and we can spare ourselves any further data transformations. In practice however this is completely different and the majority of work during a data analysis is time spent transferring the data into a format suitable for data mining. These transformations are therefore dealt with in detail in later chapters. "
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "1-2-6-modelling",
+          "number": "1.2.6",
+          "title": "Modelling",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Once we have the data regarding our customers available in a well-structured format, we can then finally replace the unknown values of our target attribute with the prediction of the most probable value by means of a data mining method. We have numerous methods available here, many of which, just like the analogy reasoning described at the beginning or the generating of rules of thumb, are based on human behaviour. We call the use of a data mining method model and",
+              "html": "Once we have the data regarding our customers available in a well-structured format, we can then finally replace the unknown values of our target attribute with the prediction of the most probable value by means of a data mining method. We have numerous methods available here, many of which, just like the analogy reasoning described at the beginning or the generating of rules of thumb, are based on human behaviour. We call the use of a data mining method model and "
+            },
+            {
+              "type": "paragraph",
+              "text": "Table 1.1: An example scenario",
+              "html": "Table 1.1: An example scenario "
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  ". . .",
+                  "no",
+                  "?",
+                  "yes",
+                  "received? positively Prototype"
+                ],
+                [
+                  ". . .",
+                  "Sons Williams &",
+                  "John Paper",
+                  "Inc. Doe Systems,",
+                  "Name"
+                ],
+                [
+                  ". . .",
+                  "cut ford, Connecti Street, Hart 5500 Park",
+                  "City, Utah Blvd, Salt Lake 4456 Parkway",
+                  "Massachusetts Sunnyville, 76 Any Street,",
+                  "Address"
+                ],
+                [
+                  ". . .",
+                  "Trade",
+                  "IT",
+                  "Mechanics",
+                  "Sector"
+                ],
+                [
+                  ". . .",
+                  "Textiles",
+                  "cations communi Tele",
+                  "chines ma bending Pipe",
+                  "Subsector"
+                ],
+                [
+                  ". . .",
+                  "< 100",
+                  "1000 600-",
+                  "> 1000",
+                  "ployees ofNumber em"
+                ],
+                [
+                  ". . .",
+                  "1",
+                  "3",
+                  "5",
+                  "group 1 chases ofNumber pur"
+                ],
+                [
+                  ". . .",
+                  "11",
+                  "7",
+                  "0",
+                  "group 2 chases ofNumber pur"
+                ],
+                [
+                  ". . .",
+                  ". . .",
+                  ". . .",
+                  ". . .",
+                  ". . ."
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "the result of such a method, i.e. the prediction instruction, is a model. Just as data mining can be used for different issues, this also applies for models. They can be easy to understand and explain the underlying processes in a simple manner. Or they can be good to use for prediction in the case of unknown situations. Sometimes both apply, such as with the following model for example, which a data mining method could have supplied for our scenario:",
+              "html": "the result of such a method, i.e. the prediction instruction, is a model. Just as data mining can be used for different issues, this also applies for models. They can be easy to understand and explain the underlying processes in a simple manner. Or they can be good to use for prediction in the case of unknown situations. Sometimes both apply, such as with the following model for example, which a data mining method could have supplied for our scenario: "
+            },
+            {
+              "type": "paragraph",
+              "text": "“If the customer comes from urban areas, has more than 500 employees and if at least 3 purchases were transacted in product group 1, then the probability of this customer being interested in the new product is high.”",
+              "html": "“If the customer comes from urban areas, has more than 500 employees and if at least 3 purchases were transacted in product group 1, then the probability of this customer being interested in the new product is high.” "
+            },
+            {
+              "type": "paragraph",
+              "text": "Such a model can be easily understood and may provide a deeper insight into the underlying data and decision processes of your customers. And in addition it is an operational model, i.e. a model which can be used directly for making a prediction for further customers. The company “John Paper” for example satisfies the conditions of the rule above and is therefore bound to be interested in the new product - at least there is a high probability of this. Your goal would therefore have been reached and by using data mining you would have generated a model which you could use for increasing your marketing efficiency: Instead of just contacting all existing customers and other candidates without looking, you could now concentrate your marketing efforts on promising customers and would therefore have a substantially higher success rate with less time and effort. Or you could even go a step further and analyse which sales channels would probably produce the best results and for which customers.",
+              "html": "Such a model can be easily understood and may provide a deeper insight into the underlying data and decision processes of your customers. And in addition it is an operational model, i.e. a model which can be used directly for making a prediction for further customers. The company “John Paper” for example satisfies the conditions of the rule above and is therefore bound to be interested in the new product - at least there is a high probability of this. Your goal would therefore have been reached and by using data mining you would have generated a model which you could use for increasing your marketing efficiency: Instead of just contacting all existing customers and other candidates without looking, you could now concentrate your marketing efforts on promising customers and would therefore have a substantially higher success rate with less time and effort. Or you could even go a step further and analyse which sales channels would probably produce the best results and for which customers. "
+            },
+            {
+              "type": "paragraph",
+              "text": "In the following chapters we will focus on further uses of data mining and at the same time practise transferring concepts such as customers, business processes or products into attributes, examples and data sets. This will train the eye to detect further possibilities of application tremendously and will make analyst life much easier for you later on. First though, we would like to spend a little time on RapidMiner and give a small introduction to its use, so that you can implement the following examples immediately.",
+              "html": "In the following chapters we will focus on further uses of data mining and at the same time practise transferring concepts such as customers, business processes or products into attributes, examples and data sets. This will train the eye to detect further possibilities of application tremendously and will make analyst life much easier for you later on. First though, we would like to spend a little time on RapidMiner and give a small introduction to its use, so that you can implement the following examples immediately. "
+            },
+            {
+              "type": "paragraph",
+              "text": "2 First steps",
+              "html": "2 First steps "
+            },
+            {
+              "type": "paragraph",
+              "text": "RapidMiner Studio combines technology and applicability to serve a user-friendly integration of the latest as well as established data mining techniques. Defining analysis processes with RapidMiner Studio is done by drag and drop of operators, setting parameters and combining operators.",
+              "html": "RapidMiner Studio combines technology and applicability to serve a user-friendly integration of the latest as well as established data mining techniques. Defining analysis processes with RapidMiner Studio is done by drag and drop of operators, setting parameters and combining operators. "
+            },
+            {
+              "type": "paragraph",
+              "text": "As we will see in the following, processes can be produced from a large number of almost randomly nestable operators and finally be represented by a so-called process graph (flow design). The process structure is described internally by XML and developed by means of a graphical user interface. In the background, RapidMiner Studio constantly checks the process currently being developed for syntax conformity and automatically makes suggestions in case of problems. This is made possible by the so-called meta data transformation, which transforms the underlying meta data at the design stage in such a way that the form of the re sult can already be foreseen and solutions can be identified in case of unsuitable operator combinations (quick fixes). In addition, RapidMiner Studio offers the possibility of defining breakpoints and of therefore inspecting virtually every in termediate result. Successful operator combinations can be pooled into building blocks and are therefore available again in later processes.",
+              "html": "As we will see in the following, processes can be produced from a large number of almost randomly nestable operators and finally be represented by a so-called process graph (flow design). The process structure is described internally by XML and developed by means of a graphical user interface. In the background, RapidMiner Studio constantly checks the process currently being developed for syntax conformity and automatically makes suggestions in case of problems. This is made possible by the so-called meta data transformation, which transforms the underlying meta data at the design stage in such a way that the form of the re sult can already be foreseen and solutions can be identified in case of unsuitable operator combinations (quick fixes). In addition, RapidMiner Studio offers the possibility of defining breakpoints and of therefore inspecting virtually every in termediate result. Successful operator combinations can be pooled into building blocks and are therefore available again in later processes. "
+            },
+            {
+              "type": "paragraph",
+              "text": "RapidMiner Studio contains more than 1500 operations altogether for all tasks of professional data analysis, from data partitioning, to market-based analysis, to attribute generation, it includes all the tools you need to make your data work for you. But also methods of text mining, web mining, the automatic sentiment analysis from Internet discussion forums (sentiment analysis, opinion mining) as well as the time series analysis and -prediction are available. RapidMiner",
+              "html": "RapidMiner Studio contains more than 1500 operations altogether for all tasks of professional data analysis, from data partitioning, to market-based analysis, to attribute generation, it includes all the tools you need to make your data work for you. But also methods of text mining, web mining, the automatic sentiment analysis from Internet discussion forums (sentiment analysis, opinion mining) as well as the time series analysis and -prediction are available. RapidMiner "
+            },
+            {
+              "type": "paragraph",
+              "text": "Studio enables us to use strong visualisations like 3-D graphs, scatter matrices and self-organizing maps. It allows you to turn your data into fully customizable, exportable charts with support for zooming, panning, and rescaling for maximum visual impact.",
+              "html": "Studio enables us to use strong visualisations like 3-D graphs, scatter matrices and self-organizing maps. It allows you to turn your data into fully customizable, exportable charts with support for zooming, panning, and rescaling for maximum visual impact. "
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ]
+}

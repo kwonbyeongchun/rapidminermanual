@@ -1,0 +1,313 @@
+{
+  "id": "chapter-5",
+  "number": "5",
+  "title": "Repository",
+  "slug": "chapter-5-repository",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "Tables, databases, collections of texts, log files, websites, measured values – this and the like is at the beginning of every data mining process. Data is prepared, converted, merged, and at the end you will receive new or differently represented data, models or reports. In this chapter you will find out how to handle all these objects with RapidMiner Studio.",
+      "html": "Tables, databases, collections of texts, log files, websites, measured values – this and the like is at the beginning of every data mining process. Data is prepared, converted, merged, and at the end you will receive new or differently represented data, models or reports. In this chapter you will find out how to handle all these objects with RapidMiner Studio."
+    }
+  ],
+  "sections": [
+    {
+      "id": "5-1-the-rapidminer-studio-repository",
+      "number": "5.1",
+      "title": "The RapidMiner Studio Repository",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "As soon as your collection of processes and associated files exceeds a certain size, you will see it is wise to organise those in a consistent and structured manner. One possibility is the organisation of projects on file level. Files are grouped into projects and a directory is created in each case for output data, intermediate results, reports, etc. While creating organised project structures is sensible, using the normal file sys- tem is recommended only in the rarest cases and is hardly sufficient for the needs of a data mining solution. Different reasons such as confidentiality or limited storage space can make creating files on the local computer impossible. If a pro- cess created on the local computer is to be executed on a remote server, this requires manual interventions like copying the process and adapting paths. The collaborative creation of processes, manipulation of data and evaluation of results",
+          "html": "As soon as your collection of processes and associated files exceeds a certain size, you will see it is wise to organise those in a consistent and structured manner. One possibility is the organisation of projects on file level. Files are grouped into projects and a directory is created in each case for output data, intermediate results, reports, etc. While creating organised project structures is sensible, using the normal file sys- tem is recommended only in the rarest cases and is hardly sufficient for the needs of a data mining solution. Different reasons such as confidentiality or limited storage space can make creating files on the local computer impossible. If a pro- cess created on the local computer is to be executed on a remote server, this requires manual interventions like copying the process and adapting paths. The collaborative creation of processes, manipulation of data and evaluation of results"
+        },
+        {
+          "type": "paragraph",
+          "text": "requires an external rights and version administration. Files stored in different formats require the correct setting of parameters such as separators and coding for each new loading. Intermediate results and process variants soon grow to a considerable number, meaning that one can lose track easily. Loading and look- ing at data in order to regain an overview requires a loading process that may be lengthy or even the running of an external application. Annotations of files which can make this easier are not supported by normal file systems. RapidMiner’s answer to all these problems is the repository, which takes up all data and processes. Although data can also be introduced into processes from outside the repository, which is necessary for the execution of ETL processes for example, using the repository offers a number of advantages which you will not want to miss:",
+          "html": "requires an external rights and version administration. Files stored in different formats require the correct setting of parameters such as separators and coding for each new loading. Intermediate results and process variants soon grow to a considerable number, meaning that one can lose track easily. Loading and look- ing at data in order to regain an overview requires a loading process that may be lengthy or even the running of an external application. Annotations of files which can make this easier are not supported by normal file systems. RapidMiner’s answer to all these problems is the repository, which takes up all data and processes. Although data can also be introduced into processes from outside the repository, which is necessary for the execution of ETL processes for example, using the repository offers a number of advantages which you will not want to miss:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Data, processes, results and reports are stored in locations indicated relative"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "to one another in a mechanism that is transparent for the user.",
+          "html": "to one another in a mechanism that is transparent for the user."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Opening or loading the files requires no further settings. Data can be"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "opened, looked at or incorporated into the process with a single click. You will get an overview of the stored data, its characteristics and remarks made by yourself at any time without having to open the file separately.",
+          "html": "opened, looked at or incorporated into the process with a single click. You will get an overview of the stored data, its characteristics and remarks made by yourself at any time without having to open the file separately."
+        },
+        {
+          "type": "list",
+          "items": [
+            "All input and output data plus intermediate results are annotated with"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "meta information. This ensures the consistency and integrity of your data and makes validating processes possible at the time of development as well as the provision of context-sensitive assistants. The repository can either be on a local or shared file system or be made available by the external RapidMiner Server. The following picture shows the repository view, which displays the content of the repository. RapidMiner Studio provides a set of example processes and example data which you will find in the repository initially created. Some of these can be seen in Figure 5.1.",
+          "html": "meta information. This ensures the consistency and integrity of your data and makes validating processes possible at the time of development as well as the provision of context-sensitive assistants. The repository can either be on a local or shared file system or be made available by the external RapidMiner Server. The following picture shows the repository view, which displays the content of the repository. RapidMiner Studio provides a set of example processes and example data which you will find in the repository initially created. Some of these can be seen in Figure 5.1."
+        },
+        {
+          "type": "image",
+          "caption": "Figure 5.1: The repository view with an opened example directory.",
+          "src": ""
+        }
+      ],
+      "subsections": [
+        {
+          "id": "5-1-1-creating-a-new-repository",
+          "number": "5.1.1",
+          "title": "Creating a New Repository",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "In order to be able to use the repository, you must first create one. RapidMiner Studio asks you to do this when it is started for the first time. You can later",
+              "html": "In order to be able to use the repository, you must first create one. RapidMiner Studio asks you to do this when it is started for the first time. You can later"
+            },
+            {
+              "type": "paragraph",
+              "text": "add further repositories by using the first button in the toolbar of the repository view. The following pictures show the simple procedure. If you do not use the RapidMiner Server, select the first option to create a local repository and then choose Next. Now give your repository a name and choose a directory for it to be created in. Close the dialog with Finish. You can now use your repository.",
+              "html": "add further repositories by using the first button in the toolbar of the repository view. The following pictures show the simple procedure. If you do not use the RapidMiner Server, select the first option to create a local repository and then choose Next. Now give your repository a name and choose a directory for it to be created in. Close the dialog with Finish. You can now use your repository."
+            },
+            {
+              "type": "image",
+              "caption": "Figure 5.2: You can use a repository on a shared RapidMiner Server or select a",
+              "src": ""
+            },
+            {
+              "type": "paragraph",
+              "text": "local repository.",
+              "html": "local repository."
+            },
+            {
+              "type": "image",
+              "caption": "Figure 5.3: RapidMiner Studio asks for the name and directory for a newly cre-",
+              "src": ""
+            },
+            {
+              "type": "paragraph",
+              "text": "ated local repository.",
+              "html": "ated local repository."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "5-2-using-the-repository",
+      "number": "5.2",
+      "title": "Using the Repository",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "It makes sense to use a uniform directory structure for projects, for example a project folder with the name of the project and a folder each for processes, input data and results. All examples in this manual follow this structure. You can create directories using the context menu in the repository view or using the button in the toolbar at the top of this view.",
+          "html": "It makes sense to use a uniform directory structure for projects, for example a project folder with the name of the project and a folder each for processes, input data and results. All examples in this manual follow this structure. You can create directories using the context menu in the repository view or using the button in the toolbar at the top of this view."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "5-2-1-processes-and-relative-repository-descriptions",
+          "number": "5.2.1",
+          "title": "Processes and Relative Repository Descriptions",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Before discussing in the following sections how you can store data and processes in the repository and access these again, we would like to first give some fundamental tips on referencing these objects within the repository. You can store processes in the repository by selecting the entry “Store Process” in the context menu or by selecting the appropriate entry in the “File” menu. In the latter case, the repository browser opens, where you can indicate the location for storing the process. After a process has been stored in the repository, all references to repository entries set as parameters of operators are resolved in relation to the location of the process. What does that mean? Entries in the repository are designated as follows: //RepositoryName/Folder/Subfolder/File The two slashes at the beginning indicate that the name of a repository will follow first. Then further folder names and finally a file name. We call such details absolute. In the following description /Folder/Subfolder/File the repository designation is missing at the front. This description is therefore repository-relative. It refers to the file described in the same repository, where the process in which this description is used is located. The slash at the front indicates an absolute path description. If this is also missing, the description relative is resolved:",
+              "html": "Before discussing in the following sections how you can store data and processes in the repository and access these again, we would like to first give some fundamental tips on referencing these objects within the repository. You can store processes in the repository by selecting the entry “Store Process” in the context menu or by selecting the appropriate entry in the “File” menu. In the latter case, the repository browser opens, where you can indicate the location for storing the process. After a process has been stored in the repository, all references to repository entries set as parameters of operators are resolved in relation to the location of the process. What does that mean? Entries in the repository are designated as follows: //RepositoryName/Folder/Subfolder/File The two slashes at the beginning indicate that the name of a repository will follow first. Then further folder names and finally a file name. We call such details absolute. In the following description /Folder/Subfolder/File the repository designation is missing at the front. This description is therefore repository-relative. It refers to the file described in the same repository, where the process in which this description is used is located. The slash at the front indicates an absolute path description. If this is also missing, the description relative is resolved:"
+            },
+            {
+              "type": "paragraph",
+              "text": "../RelativeFolder/File designates for example a file in the folder “RelativeFolder” which we reach by moving up (“..”) a directory from the file containing the current process and looking for the folder “RelativeFolder” there. So if the process is located for example in the file //MyRepository/ProjectA/Processes/ProcessB, this description leads to //MyRepository/ProjectA/RelativeFolder/File. Note: The descriptions above probably sound more complicated than they really are in practice. As long as, before anything else, you define a location within the repository for each new process and then simply use the repository browser for all operator parameters requiring an entry in the repository, RapidMiner Studio will ensure, fully automatically, that relative data is always used as far as possible. This makes repository restructuring and making copies for other users easier in particular, which would be difficult with absolute descriptions.",
+              "html": "../RelativeFolder/File designates for example a file in the folder “RelativeFolder” which we reach by moving up (“..”) a directory from the file containing the current process and looking for the folder “RelativeFolder” there. So if the process is located for example in the file //MyRepository/ProjectA/Processes/ProcessB, this description leads to //MyRepository/ProjectA/RelativeFolder/File. Note: The descriptions above probably sound more complicated than they really are in practice. As long as, before anything else, you define a location within the repository for each new process and then simply use the repository browser for all operator parameters requiring an entry in the repository, RapidMiner Studio will ensure, fully automatically, that relative data is always used as far as possible. This makes repository restructuring and making copies for other users easier in particular, which would be difficult with absolute descriptions."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "5-2-2-importing-data-and-objects-into-the-repository",
+          "number": "5.2.2",
+          "title": "Importing Data and Objects into the Repository",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "There are numerous ways to import data and other objects such as models into the repository. We will now describe the most important ones. Importing Example Sets with Wizards If you have data in a certain format and wish to use it in a RapidMiner Studio process, so-called wizards are available to you for many file formats and databases. A wizard is a dialog which guides you step by step through the loading process. With all wizards you can assign certain meta data such as attribute types, ranges of values and roles for the individual columns. In the upper area of the repository you will find an icon which starts the appropriate wizard for the selected file type. You will find the same action in the “File” menu of RapidMiner Studio. Finally,",
+              "html": "There are numerous ways to import data and other objects such as models into the repository. We will now describe the most important ones. Importing Example Sets with Wizards If you have data in a certain format and wish to use it in a RapidMiner Studio process, so-called wizards are available to you for many file formats and databases. A wizard is a dialog which guides you step by step through the loading process. With all wizards you can assign certain meta data such as attribute types, ranges of values and roles for the individual columns. In the upper area of the repository you will find an icon which starts the appropriate wizard for the selected file type. You will find the same action in the “File” menu of RapidMiner Studio. Finally,"
+            },
+            {
+              "type": "paragraph",
+              "text": "there is another particularly simple way to import files: Simply drag the file to be imported into the process view while holding down the mouse button. If possible, an appropriate operator will then be created. The Operator “Store” If you have an ETL process or another process, the result of which you would like to store in the repository, you can do this by integrating the operator “Store” into your process.",
+              "html": "there is another particularly simple way to import files: Simply drag the file to be imported into the process view while holding down the mouse button. If possible, an appropriate operator will then be created. The Operator “Store” If you have an ETL process or another process, the result of which you would like to store in the repository, you can do this by integrating the operator “Store” into your process."
+            },
+            {
+              "type": "image",
+              "caption": "Figure 5.4: The operator “Store” can be used to store any data and objects in",
+              "src": ""
+            },
+            {
+              "type": "paragraph",
+              "text": "the repository. The dialog shows the repository browser so that the storage location can be specified and appears in the parameters of the operator if the “Directory” button is clicked on. Using the operator “Generate Data”, the example process in this picture gener- ates a data set, which is to be stored in the repository. The “Store” operator only has one parameter, “repository location”. If you press the button with the",
+              "html": "the repository. The dialog shows the repository browser so that the storage location can be specified and appears in the parameters of the operator if the “Directory” button is clicked on. Using the operator “Generate Data”, the example process in this picture gener- ates a data set, which is to be stored in the repository. The “Store” operator only has one parameter, “repository location”. If you press the button with the"
+            },
+            {
+              "type": "paragraph",
+              "text": "folder next to this parameter, you will get a dialog in which you can first assign a folder in the repository and then a name for the data set (Figure 5.4). If you execute the process, you will see that a new entry will appear in the repository containing the generated data set. The store operator is therefore particularly useful for data integration and transformation processes which are to be per- formed automatically or regularly, for example within the process scheduler of the RapidMiner Server. Using the wizard as described above is definitely the more frequently used way to ensure a one-off and fairly interactive integration of data. Note: You can not only connect data sets with the store operator, but also models and all other RapidMiner Studio objects. You can therefore also store any results in your repository. Importing other formats with operators The repository stores data sets in a format which contains all data and meta data needed by RapidMiner Studio. Your data will probably be in another format at the beginning: CSV, Excel, SQL databases, etc. As described above, you can transfer these files into your repository. However, RapidMiner Studio can also import numerous other formats within processes. You will find operators for this in the group “Import”. However, caution is required when using these operators: The availability of meta data is not guaranteed for these operators, which can lead for example to processes that assume the existence of certain attribute values only noticing any errors in the runtime of the process. Nevertheless, using these file formats is sometimes not avoidable, e.g. for the regular execution of ETL processes. The goal of these processes should be however to transfer the data into the repository with a subsequent store operator so that it can be used by the actual analysis processes that follow. The operators of the “Import” group have numerous parameters tailored to the respective format. Please see the respective operator documentation for their description.",
+              "html": "folder next to this parameter, you will get a dialog in which you can first assign a folder in the repository and then a name for the data set (Figure 5.4). If you execute the process, you will see that a new entry will appear in the repository containing the generated data set. The store operator is therefore particularly useful for data integration and transformation processes which are to be per- formed automatically or regularly, for example within the process scheduler of the RapidMiner Server. Using the wizard as described above is definitely the more frequently used way to ensure a one-off and fairly interactive integration of data. Note: You can not only connect data sets with the store operator, but also models and all other RapidMiner Studio objects. You can therefore also store any results in your repository. Importing other formats with operators The repository stores data sets in a format which contains all data and meta data needed by RapidMiner Studio. Your data will probably be in another format at the beginning: CSV, Excel, SQL databases, etc. As described above, you can transfer these files into your repository. However, RapidMiner Studio can also import numerous other formats within processes. You will find operators for this in the group “Import”. However, caution is required when using these operators: The availability of meta data is not guaranteed for these operators, which can lead for example to processes that assume the existence of certain attribute values only noticing any errors in the runtime of the process. Nevertheless, using these file formats is sometimes not avoidable, e.g. for the regular execution of ETL processes. The goal of these processes should be however to transfer the data into the repository with a subsequent store operator so that it can be used by the actual analysis processes that follow. The operators of the “Import” group have numerous parameters tailored to the respective format. Please see the respective operator documentation for their description."
+            },
+            {
+              "type": "paragraph",
+              "text": "Storing Objects from the Result or Process View After you have executed a process, the Results Perspective with the tab of the same name is presented to you in the basic setting. On the right-hand side of its toolbar there is a button with which you can store the result currently selected in the repository. A dialog will also appear here allowing you to select a folder and a name. If your process contains intermediate results which are not (or no longer) indicated in the Results Perspective, you can also store these from the Process View. In order to do this, click on a port where data is present using the right-hand mouse button. This is the case at the output ports of all operators that have already been executed. You will recognise this from the darker colour and an appropriate entry in the context help. You select the menu entry “Store in Repository” here to store the object. Please bear in mind however that the data at the ports may be released again after some time in order to save memory and is therefore not guaranteed to stay at the ports for any amount of time. Please also see the explanations in the previous chapter.",
+              "html": "Storing Objects from the Result or Process View After you have executed a process, the Results Perspective with the tab of the same name is presented to you in the basic setting. On the right-hand side of its toolbar there is a button with which you can store the result currently selected in the repository. A dialog will also appear here allowing you to select a folder and a name. If your process contains intermediate results which are not (or no longer) indicated in the Results Perspective, you can also store these from the Process View. In order to do this, click on a port where data is present using the right-hand mouse button. This is the case at the output ports of all operators that have already been executed. You will recognise this from the darker colour and an appropriate entry in the context help. You select the menu entry “Store in Repository” here to store the object. Please bear in mind however that the data at the ports may be released again after some time in order to save memory and is therefore not guaranteed to stay at the ports for any amount of time. Please also see the explanations in the previous chapter."
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "5-2-3-access-to-and-administration-of-the-repository",
+          "number": "5.2.3",
+          "title": "Access to and Administration of the Repository",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Once you have imported your data into the repository you can use it in your processes with the retrieve operator. You can drag the operator from the Oper- ators View into the process as usual and define the parameter for the repository entry there. But it gets easier still: Simply drag an entry in the repository (e.g. a data set) onto the Process View using the mouse. A configured operator with a reference to this entry will now be inserted automatically here. If the entry is an object, a new operator of the “Retrieve” type will be created and configured accordingly. If the repository entry is a process however, then a new operator of the “Execute Process” type will be created and its parameter will automatically refer to the selected process from the repository. You will find further ways of accessing the repository by right-clicking once on entries in the repository. You will be familiar with these possibilities from the file",
+              "html": "Once you have imported your data into the repository you can use it in your processes with the retrieve operator. You can drag the operator from the Oper- ators View into the process as usual and define the parameter for the repository entry there. But it gets easier still: Simply drag an entry in the repository (e.g. a data set) onto the Process View using the mouse. A configured operator with a reference to this entry will now be inserted automatically here. If the entry is an object, a new operator of the “Retrieve” type will be created and configured accordingly. If the repository entry is a process however, then a new operator of the “Execute Process” type will be created and its parameter will automatically refer to the selected process from the repository. You will find further ways of accessing the repository by right-clicking once on entries in the repository. You will be familiar with these possibilities from the file"
+            },
+            {
+              "type": "paragraph",
+              "text": "management of your computer. These actions are also available via the toolbar of the repository view and are largely self-explanatory: Store Process here Stores the current process to the location indicated Rename Renames the entry or the directory Create Folder Creates a new folder here Delete Deletes the selected repository entry or directory Copy Copies the selected entry so it can be pasted in other places later on Paste Pastes a previously copied entry to this place Copy Location to Clipboard Copies a clear identifier for this entry onto the clip- board, meaning you can use this as a parameter for operators, in web in- terfaces or the like Open Process If you have selected a process, the current process will be closed and the selected one loaded Refresh If the repository is located on a shared file system or if you use Rapid- Miner Server, meaning data can be changed at the same time by other users, you can refresh the view of the repository with this",
+              "html": "management of your computer. These actions are also available via the toolbar of the repository view and are largely self-explanatory: Store Process here Stores the current process to the location indicated Rename Renames the entry or the directory Create Folder Creates a new folder here Delete Deletes the selected repository entry or directory Copy Copies the selected entry so it can be pasted in other places later on Paste Pastes a previously copied entry to this place Copy Location to Clipboard Copies a clear identifier for this entry onto the clip- board, meaning you can use this as a parameter for operators, in web in- terfaces or the like Open Process If you have selected a process, the current process will be closed and the selected one loaded Refresh If the repository is located on a shared file system or if you use Rapid- Miner Server, meaning data can be changed at the same time by other users, you can refresh the view of the repository with this"
+            }
+          ],
+          "subsections": []
+        },
+        {
+          "id": "5-2-4-the-process-context",
+          "number": "5.2.4",
+          "title": "The Process Context",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "We have already used the output ports of the process on the right-hand side of the Process View previously e.g. in order to make the results of the process visible in the Result Perspective. In addition to the output ports of the process there are also input ports, which you will find on the left-hand side of the Process View. We have never connected these before. This is not even worthwhile in the basic setting, at least not for the sources, because the process itself then has no input. Connecting the inner sinks does have an effect however: All objects which arrive at a sink at the end of the process are presented in the Result Perspective as the result of the process.",
+              "html": "We have already used the output ports of the process on the right-hand side of the Process View previously e.g. in order to make the results of the process visible in the Result Perspective. In addition to the output ports of the process there are also input ports, which you will find on the left-hand side of the Process View. We have never connected these before. This is not even worthwhile in the basic setting, at least not for the sources, because the process itself then has no input. Connecting the inner sinks does have an effect however: All objects which arrive at a sink at the end of the process are presented in the Result Perspective as the result of the process."
+            },
+            {
+              "type": "paragraph",
+              "text": "These input and output ports of the process have a further function however. A typical process begins with a set of retrieve operators, which are followed by a set of processing operators, and ends with a set of store operators. You can avoid having to create these operators by using the Context View, which you will find in the “View” menu. Figure 5.5 shows this Context View.",
+              "html": "These input and output ports of the process have a further function however. A typical process begins with a set of retrieve operators, which are followed by a set of processing operators, and ends with a set of store operators. You can avoid having to create these operators by using the Context View, which you will find in the “View” menu. Figure 5.5 shows this Context View."
+            },
+            {
+              "type": "image",
+              "caption": "Figure 5.5: The process context. For “Input” you indicate repository entries",
+              "src": ""
+            },
+            {
+              "type": "paragraph",
+              "text": "which are to serve as an input of the process and be placed at input ports of the process. For “Output” you indicate where the results in the repository are to be saved to. In the Context View you have the possibility of placing data from a repository at the entry ports and of writing outputs back into the repository. You can give such an indication for each port. This has two advantages:",
+              "html": "which are to serve as an input of the process and be placed at input ports of the process. For “Output” you indicate where the results in the repository are to be saved to. In the Context View you have the possibility of placing data from a repository at the entry ports and of writing outputs back into the repository. You can give such an indication for each port. This has two advantages:"
+            },
+            {
+              "type": "paragraph",
+              "text": "1. You can forget about the operators for Retrieve and Store, which often makes your process somewhat clearer.",
+              "html": "1. You can forget about the operators for Retrieve and Store, which often makes your process somewhat clearer."
+            },
+            {
+              "type": "paragraph",
+              "text": "2. Using the context is also practical for testing processes which are to be integrated by means of the operator “Execute Process”: The data at this operator will overwrite the values defined in the process context.",
+              "html": "2. Using the context is also practical for testing processes which are to be integrated by means of the operator “Execute Process”: The data at this operator will overwrite the values defined in the process context."
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "id": "5-3-data-and-meta-data",
+      "number": "5.3",
+      "title": "Data and Meta Data",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Apart from the actual data, RapidMiner Studio also stores other information in the repository: Data about the data, so-called meta data. Such meta data is available for each type of object, and it can be particularly useful for models and data sets. The meta information stored for data sets includes for example:",
+          "html": "Apart from the actual data, RapidMiner Studio also stores other information in the repository: Data about the data, so-called meta data. Such meta data is available for each type of object, and it can be particularly useful for models and data sets. The meta information stored for data sets includes for example:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "The number of examples",
+            "The number of attributes",
+            "The types, names and roles of the attributes",
+            "The ranges of values of the attributes or some fundamental statistics",
+            "plus the number of missing values per attribute."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "This information can be seen in the repository without loading the data set beforehand, which can take some time depending on size. Simply move the cursor over a repository entry and stay on the entry for a few seconds: The meta data will be presented to you in the form of a so-called tooltip. Unlike in other programs, this help information is much more powerful than normal: By pressing key F3 you can turn such a tooltip into a proper dialog, which you can move around and change in size as you wish. In addition, these RapidMiner Studio tooltips are also able to include elements other than textual information with the meta data, such as tables for example. Please note that the meta information does not necessarily have to be available immediately. You may have to first initiate the loading of the meta data by click- ing once on a link within the tooltip. Doing this means that, should the tooltips of the repository entries be inadvertently looked at, the possibly quite large meta",
+          "html": "This information can be seen in the repository without loading the data set beforehand, which can take some time depending on size. Simply move the cursor over a repository entry and stay on the entry for a few seconds: The meta data will be presented to you in the form of a so-called tooltip. Unlike in other programs, this help information is much more powerful than normal: By pressing key F3 you can turn such a tooltip into a proper dialog, which you can move around and change in size as you wish. In addition, these RapidMiner Studio tooltips are also able to include elements other than textual information with the meta data, such as tables for example. Please note that the meta information does not necessarily have to be available immediately. You may have to first initiate the loading of the meta data by click- ing once on a link within the tooltip. Doing this means that, should the tooltips of the repository entries be inadvertently looked at, the possibly quite large meta"
+        },
+        {
+          "type": "paragraph",
+          "text": "data is prevented from having to be loaded immediately causing RapidMiner Studio to slow down. Tip: Hold the cursor over a repository entry for a short time in order to look at the meta data or load it first. If the entry is an intermediate result for example, you can easily recognise what pre-processing has already taken place. The following picture shows what the meta data for the golf data set from the ex- ample directory in the Sample repository provided with RapidMiner Studio looks like (Fig. 5.6). First you will see that the data set contains 14 examples (“Num- ber of examples”) and 5 attributes (“Number of attributes”). The attribute with the name “Outlook” is nominal and takes the three values “overcast”, “rain” and “sunny”. The attribute “Temperature” on the other hand is numerical and takes values ranging from 64 to 85 - given in Fahrenheit of course. Finally, the attribute “Play” is nominal again, but still has a special role: It is marked as “label”. The role is in italics and is given before the attribute name.",
+          "html": "data is prevented from having to be loaded immediately causing RapidMiner Studio to slow down. Tip: Hold the cursor over a repository entry for a short time in order to look at the meta data or load it first. If the entry is an intermediate result for example, you can easily recognise what pre-processing has already taken place. The following picture shows what the meta data for the golf data set from the ex- ample directory in the Sample repository provided with RapidMiner Studio looks like (Fig. 5.6). First you will see that the data set contains 14 examples (“Num- ber of examples”) and 5 attributes (“Number of attributes”). The attribute with the name “Outlook” is nominal and takes the three values “overcast”, “rain” and “sunny”. The attribute “Temperature” on the other hand is numerical and takes values ranging from 64 to 85 - given in Fahrenheit of course. Finally, the attribute “Play” is nominal again, but still has a special role: It is marked as “label”. The role is in italics and is given before the attribute name."
+        },
+        {
+          "type": "image",
+          "caption": "Figure 5.6: The meta data of the golf data set from the example directory of the",
+          "src": ""
+        },
+        {
+          "type": "paragraph",
+          "text": "“Sample” repository provided with RapidMiner Studio. You will find the data set named “Golf” in the “data” directory in this repository.",
+          "html": "“Sample” repository provided with RapidMiner Studio. You will find the data set named “Golf” in the “data” directory in this repository."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "5-3-1-propagating-meta-data-from-the-repository-and",
+          "number": "5.3.1",
+          "title": "Propagating Meta Data from the Repository and",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "through the Process You have already seen that the meta data described above accompanies the actual data on its way through the RapidMiner Studio process when you create the process. As previously mentioned, it is however absolutely necessary for this meta data propagation and transformation that you are able to manage the data in a RapidMiner Studio repository and obtain the meta data from this. For this reason we would like to remind you of and underline the necessity of using the repository for data and process management in order to provide support during process design. In this section we will carry out a further example for the design of a process, only this time we will revert to a data set from the RapidMiner Sudio repository. We will therefore now carry out the complete process for the first time, from the retrieval of the data right through to the creation of the results. Of course, this process would typically be preceded by importing data into the repository using one of the methods presented above, but in this case we shall skip this step and simply use one of the data sets already provided by RapidMiner Studio instead. Load for example the provided data set Iris using a retrieve operator, by simply dragging the entry concerned (in the same directory as the golf data set already used above) into the Process View. Do not execute the process yet though. Insert a normalise operator and connect its input with the output of the retrieve opera- tor. Set the parameter “method” to “range transformation”. In this setting, the operator serves for re-scaling numerical values so that the minimum is currently 0 and the maximum is currently 1. Select an individual attribute which you wish to apply this transformation to, e.g. the attribute “a3”. For this purpose, set the filter type “attribute filter type” to “single” and select the attribute “a3” at the parameter “attribute”. Now go over the output port of retrieve first with the mouse and then over the upper output port of the normalise operator. In both cases you will see the meta data of the Iris data set. You will notice however that the meta data of the selected attribute have changed: The range of values of “a3” is now normalised to the interval [0,1] after the transformation. Or to be more precise: The range of values of a3 would in the case of execution be normalised",
+              "html": "through the Process You have already seen that the meta data described above accompanies the actual data on its way through the RapidMiner Studio process when you create the process. As previously mentioned, it is however absolutely necessary for this meta data propagation and transformation that you are able to manage the data in a RapidMiner Studio repository and obtain the meta data from this. For this reason we would like to remind you of and underline the necessity of using the repository for data and process management in order to provide support during process design. In this section we will carry out a further example for the design of a process, only this time we will revert to a data set from the RapidMiner Sudio repository. We will therefore now carry out the complete process for the first time, from the retrieval of the data right through to the creation of the results. Of course, this process would typically be preceded by importing data into the repository using one of the methods presented above, but in this case we shall skip this step and simply use one of the data sets already provided by RapidMiner Studio instead. Load for example the provided data set Iris using a retrieve operator, by simply dragging the entry concerned (in the same directory as the golf data set already used above) into the Process View. Do not execute the process yet though. Insert a normalise operator and connect its input with the output of the retrieve opera- tor. Set the parameter “method” to “range transformation”. In this setting, the operator serves for re-scaling numerical values so that the minimum is currently 0 and the maximum is currently 1. Select an individual attribute which you wish to apply this transformation to, e.g. the attribute “a3”. For this purpose, set the filter type “attribute filter type” to “single” and select the attribute “a3” at the parameter “attribute”. Now go over the output port of retrieve first with the mouse and then over the upper output port of the normalise operator. In both cases you will see the meta data of the Iris data set. You will notice however that the meta data of the selected attribute have changed: The range of values of “a3” is now normalised to the interval [0,1] after the transformation. Or to be more precise: The range of values of a3 would in the case of execution be normalised"
+            },
+            {
+              "type": "paragraph",
+              "text": "to the interval [0,1]. Insert a further operator, the operator “Discretize by Frequency”. Connect this with the normalise operator. Set the parameter “range name type” to “short” and this time select another attribute, for example “a2”, with the same mechanism as above. Now go over the output port of the new operator with the mouse and observe how the meta data has changed: The selected attribute is now no longer numerical but nominal and takes the values “range1” and “range2”: The discretization operator breaks the numerical range of values apart at a threshold value and replaces values below this value with “range1” and values above this value with “range2”. The threshold value is automatically chosen so that there is the same number of values above as below. If you wish to have the values divided up into more than two ranges of values, adjust the parameter “number of bins” accordingly. You can see the process and the indicated meta data in the following picture:",
+              "html": "to the interval [0,1]. Insert a further operator, the operator “Discretize by Frequency”. Connect this with the normalise operator. Set the parameter “range name type” to “short” and this time select another attribute, for example “a2”, with the same mechanism as above. Now go over the output port of the new operator with the mouse and observe how the meta data has changed: The selected attribute is now no longer numerical but nominal and takes the values “range1” and “range2”: The discretization operator breaks the numerical range of values apart at a threshold value and replaces values below this value with “range1” and values above this value with “range2”. The threshold value is automatically chosen so that there is the same number of values above as below. If you wish to have the values divided up into more than two ranges of values, adjust the parameter “number of bins” accordingly. You can see the process and the indicated meta data in the following picture:"
+            },
+            {
+              "type": "image",
+              "caption": "Figure 5.7: Meta data transformation in RapidMiner.",
+              "src": ""
+            },
+            {
+              "type": "paragraph",
+              "text": "You are surely wondering why the parameter “range name type” had to be set to “short”. See for yourself and set it to “long”. If you execute the process, you will see that the nominal values now give more information: They additionally contain the limits of the intervals created. This is handy, but insignificant for the process. The information on the interval limits is not available however as long as the discretization has not actually been performed. Therefore it cannot be considered for the meta data display at the time of process development. It can then only be indicated in the meta data that the range of values of the discretized attribute is a superset of the empty set i.e. that it is not empty. This means that the meta data is not fully known. So in this case we can say virtually nothing at all about the expected meta data, except that the set of nominal values is a superset of the empty set. A trivial statement, but one that is nevertheless correct. The meta data cannot be fully determined in all cases as early as at the time of development. This is generally the case whenever the meta data is dependent on the actual data as it is here. In this case RapidMiner Studio tries to obtain as much information as possible about the data.",
+              "html": "You are surely wondering why the parameter “range name type” had to be set to “short”. See for yourself and set it to “long”. If you execute the process, you will see that the nominal values now give more information: They additionally contain the limits of the intervals created. This is handy, but insignificant for the process. The information on the interval limits is not available however as long as the discretization has not actually been performed. Therefore it cannot be considered for the meta data display at the time of process development. It can then only be indicated in the meta data that the range of values of the discretized attribute is a superset of the empty set i.e. that it is not empty. This means that the meta data is not fully known. So in this case we can say virtually nothing at all about the expected meta data, except that the set of nominal values is a superset of the empty set. A trivial statement, but one that is nevertheless correct. The meta data cannot be fully determined in all cases as early as at the time of development. This is generally the case whenever the meta data is dependent on the actual data as it is here. In this case RapidMiner Studio tries to obtain as much information as possible about the data."
+            },
+            {
+              "type": "paragraph",
+              "text": "Global leader in predictive analytics software. Boston | London | Dortmund | Budapest www.rapidminer.com",
+              "html": "Global leader in predictive analytics software. Boston | London | Dortmund | Budapest www.rapidminer.com"
+            }
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ]
+}
