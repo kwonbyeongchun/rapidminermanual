@@ -18,6 +18,21 @@ export default function HomePage() {
         </p>
       </div>
 
+      <Link
+        to="/summary"
+        className="block mb-8 border border-primary-200 bg-primary-50 rounded-lg p-5 hover:border-primary-400 hover:shadow-sm transition-all"
+      >
+        <div className="flex items-center justify-between">
+          <div>
+            <h3 className="text-lg font-semibold text-primary-800">{t('viewSummary')}</h3>
+            <p className="text-sm text-primary-600 mt-1">{t('summaryDescription')}</p>
+          </div>
+          <svg className="w-5 h-5 text-primary-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </Link>
+
       <div className="space-y-6">
         {chapters.map(chapter => (
           <div

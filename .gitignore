@@ -5,3 +5,4 @@ dist/
 .claude/
 test-screenshots/
 playwright-test/
+nul

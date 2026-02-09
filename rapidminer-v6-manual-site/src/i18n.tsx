@@ -40,6 +40,15 @@ const translations = {
     chapterNotFound: 'Chapter not found',
     chapterNotFoundDesc: 'The requested chapter does not exist.',
 
+    // Summary
+    summary: 'Summary',
+    summaryTitle: 'Chapter Summaries',
+    summaryDescription:
+      'Concise summaries of each chapter for quick review of key concepts and important points.',
+    viewSummary: 'View Summaries',
+    summaryNotAvailable: 'Summary not available in this language',
+    backToSummary: 'Back to summaries',
+
     // Chapter titles
     'ch.1': 'Fundamental Terms',
     'ch.2': 'First Steps',
@@ -83,6 +92,15 @@ const translations = {
     // Chapter page
     chapterNotFound: '챕터를 찾을 수 없습니다',
     chapterNotFoundDesc: '요청하신 챕터가 존재하지 않습니다.',
+
+    // Summary
+    summary: '요약',
+    summaryTitle: '챕터 요약',
+    summaryDescription:
+      '각 챕터의 핵심 개념과 중요 사항을 빠르게 파악할 수 있는 간결한 요약입니다.',
+    viewSummary: '요약 보기',
+    summaryNotAvailable: '이 언어로는 요약이 제공되지 않습니다',
+    backToSummary: '요약 목록으로 돌아가기',
 
     // Chapter titles
     'ch.1': '기본 용어',

@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useLocation } from 'react-router-dom'
+import { useI18n } from '../i18n'
 import { useChapters } from '../hooks/useChapters'
+import { summaryChapters } from '../content/summaryData'
 
 interface SidebarProps {
   onNavigate: () => void
@@ -8,7 +10,10 @@ interface SidebarProps {
 
 export default function Sidebar({ onNavigate }: SidebarProps) {
   const { chapterSlug } = useParams()
+  const location = useLocation()
+  const { lang, t } = useI18n()
   const chapters = useChapters()
+  const isSummarySection = location.pathname.startsWith('/summary')
   const [expanded, setExpanded] = useState<Record<string, boolean>>(() => {
     const initial: Record<string, boolean> = {}
     if (chapterSlug) {
@@ -83,6 +88,37 @@ export default function Sidebar({ onNavigate }: SidebarProps) {
           </div>
         )
       })}
+
+      {/* Summary section */}
+      <div className="mt-6 pt-4 border-t border-gray-200">
+        <Link
+          to="/summary"
+          onClick={onNavigate}
+          className={`block px-2 py-1.5 text-sm font-medium rounded-md transition-colors ${
+            isSummarySection
+              ? 'bg-primary-50 text-primary-700'
+              : 'text-gray-700 hover:bg-gray-100'
+          }`}
+        >
+          {t('summary')}
+        </Link>
+        <div className="ml-3 pl-2 border-l border-gray-200 space-y-0.5 mt-1">
+          {summaryChapters.map(sc => (
+            <Link
+              key={sc.id}
+              to={`/summary/${sc.slug}`}
+              onClick={onNavigate}
+              className={`block px-2 py-1 text-sm rounded transition-colors truncate ${
+                isSummarySection && chapterSlug === sc.slug
+                  ? 'text-primary-700 bg-primary-50 font-medium'
+                  : 'text-gray-600 hover:text-primary-700 hover:bg-gray-50'
+              }`}
+            >
+              {sc.number}. {sc.title[lang]}
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
