@@ -6,3 +6,4 @@ dist/
 test-screenshots/
 playwright-test/
 nul
+.serena/
